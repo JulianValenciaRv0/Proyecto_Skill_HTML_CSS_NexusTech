@@ -1,0 +1,70 @@
+/* =========================================
+   1. VARIABLES
+   El estudiante DEBE usar estas variables.
+   ========================================= */
+:root {
+    /* Paleta de Colores */
+    --color-bg-primary: #0f172a;    /* Fondo principal oscuro */
+    --color-bg-secondary: #1e293b;  /* Fondo de tarjetas */
+    --color-accent: #3b82f6;        /* Azul brillante para acciones */
+    --color-accent-hover: #2563eb;
+    --color-text-main: #f8fafc;     /* Blanco casi puro */
+    --color-text-muted: #94a3b8;    /* Gris para textos secundarios */
+    
+    /* Tipografía */
+    --font-main: 'Inter', sans-serif;
+    
+    /* Espaciado */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --container-width: 1200px;
+}
+
+/* =========================================
+   2. RESET CSS BÁSICO
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Vital para el cálculo de anchos */
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* =========================================
+   3. UTILIDADES
+   ========================================= */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* NOTA:
+   - Usa 'layout.css' para grillas (Grid/Flex) de las secciones.
+   - Usa 'components.css' para botones, tarjetas y formularios.
+   - Recuerda: MOBILE FIRST. Escribe el CSS base para celular aquí
+     y usa @media (min-width: 768px) para tablets/escritorio.
+*/
