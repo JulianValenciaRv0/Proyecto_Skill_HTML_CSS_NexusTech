@@ -1,70 +1,170 @@
-/* =========================================
-   1. VARIABLES
-   El estudiante DEBE usar estas variables.
-   ========================================= */
-:root {
-    /* Paleta de Colores */
-    --color-bg-primary: #0f172a;    /* Fondo principal oscuro */
-    --color-bg-secondary: #1e293b;  /* Fondo de tarjetas */
-    --color-accent: #3b82f6;        /* Azul brillante para acciones */
-    --color-accent-hover: #2563eb;
-    --color-text-main: #f8fafc;     /* Blanco casi puro */
-    --color-text-muted: #94a3b8;    /* Gris para textos secundarios */
-    
-    /* Tipografía */
-    --font-main: 'Inter', sans-serif;
-    
-    /* Espaciado */
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --container-width: 1200px;
+
+/*----------HEADER-----------*/
+
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem 15rem 1.2rem 10rem;
+    border-bottom: 2px solid black;
+    align-items: center;
 }
 
-/* =========================================
-   2. RESET CSS BÁSICO
-   ========================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Vital para el cálculo de anchos */
+.navbar{
+    display: flex;
+    gap: 20px;
 }
 
-body {
-    font-family: var(--font-main);
-    background-color: var(--color-bg-primary);
-    color: var(--color-text-main);
-    line-height: 1.6;
+.navbar h1{
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-}
+/*----------BANNER-----------*/
 
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    width: 70vw;
     height: auto;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 2rem auto 0; 
+    overflow: hidden;
+    padding: 0; 
 }
 
-/* =========================================
-   3. UTILIDADES
-   ========================================= */
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
+
+.banner__firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 60%;
+    gap: 1rem;
+    border-right: 2px solid var(--color-border, #333);   
+    padding: 4rem 6rem 4rem 4rem
 }
 
-/* NOTA:
-   - Usa 'layout.css' para grillas (Grid/Flex) de las secciones.
-   - Usa 'components.css' para botones, tarjetas y formularios.
-   - Recuerda: MOBILE FIRST. Escribe el CSS base para celular aquí
-     y usa @media (min-width: 768px) para tablets/escritorio.
-*/
+.banner__buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.banner__buttons .button_uno{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.banner__buttons .button_dos{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.banner__secondSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.secondSection_card{
+    width: 100%;                  
+    height: 100%;
+    background-color: white;
+}
+
+/*----------ARTICLES SECTION-----------*/
+
+.articles-section{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header{
+    justify-content: center;
+}
+
+.section-header__title-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*----------CARDS----------*/
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 2rem;
+    column-gap: 5rem;
+    
+}
+
+.grid-cards__card{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.grid-cards__img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.grid-cards__info{
+    padding: 1rem;
+}
+
+.grid-cards__header{
+    display: flex;
+    gap: 10px
+}
+
+.grid-cards_description{
+    border-bottom: 2px solid black;
+}
+
+footer{
+    background-color: white;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.footer-grid__section-list{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.footer-bottom p{
+    width: 40%;
+}
+
+.footer-bottom__info{
+    display: flex;
+    gap: 1rem;
+}
