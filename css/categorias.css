@@ -1,0 +1,44 @@
+
+.header-titles{
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+}
+
+.header-titles__title{
+    display: flex;
+}
+
+.main-layout{
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+}
+
+.all-articles-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.section-cards__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.section-cards__section-left{
+    display: flex;
+}
+
+.section-cards__section-right{
+    display: flex;
+    gap: 10px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
