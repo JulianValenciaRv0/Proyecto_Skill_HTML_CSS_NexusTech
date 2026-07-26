@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/categorias.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1 class="title">NEXUSTECH</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__link navbar__link--active">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="categorias.html" class="navbar__link">Categorías</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="resenas.html" class="navbar__link">Reseñas</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Comunidad</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Eventos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-------- Seccion del title header --------->
+        <section>
+            <div class="header-titles">
+                <p class="header-titles__subtitle">Explora por tema / 02</p>
+                <h1 class="header-titles__title">Categorías<section class="header-titles__title-light">&nbsp;de Nexus Tech</section></h1>
+                <p class="header-titles__description">Filtra por área de interés y descubre los análisis más recientes de nuestro equipo editorial. Desde inteligencia artificial hasta ciberseguridad.</p>
+            </div>
+        </section>
+        <!-------- Aside y articulos Grid --------->
+        <div class="main-layout">
+            <aside class="filter-sidebar">
+                <p class="filter-sidebar__icono-title">#</p>
+                <h1 class="filter-sidebar__title">Filtros</h1>
+                <h1 class="filter-sidebar__title-categories">CATEGORÍAS</h1>
+                <div class="filter-option">
+                    <input type="checkbox" id="ia" name="category" value="ia">
+                    <label for="ia">Inteligencia Artificial</label>
+                    <span class="badge">24</span>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="gadgets" name="category" value="gadgets">
+                    <label for="gadgets">Gadgets</label>
+                    <span class="badge">18</span>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="ciberseguridad" name="category" value="ciberseguridad">
+                    <label for="ciberseguridad">Ciberseguridad</label>
+                    <span class="badge">15</span>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="ciberseguridad" name="category" value="ciberseguridad">
+                    <label for="ciberseguridad">Desarrollo de Software</label>
+                    <span class="badge">15</span>
+                </div>
+
+                <div class="filter-option">
+                    <input type="checkbox" id="ciberseguridad" name="category" value="ciberseguridad">
+                    <label for="ciberseguridad">Tendencias</label>
+                    <span class="badge">15</span>
+                </div>
+                <h1 class="filter-sidebar__title-categories">Fecha de publicación</h1>
+                <div class="filter-option">
+                    <input type="radio" id="7dias" name="date_filter" value="7dias" checked>
+                    <label for="7dias">Últimos 7 días</label>
+                </div>
+
+                <div class="filter-option">
+                    <input type="radio" id="30dias" name="date_filter" value="30dias">
+                    <label for="30dias">Últimos 30 días</label>
+                </div>
+
+                <div class="filter-option">
+                    <input type="radio" id="antiguos" name="date_filter" value="antiguos">
+                    <label for="antiguos">Más antiguos</label>
+                </div>
+                <button class="filter-sidebar__button">APLICAR FILTROS</button>
+            </aside>
+            <div class="section-cards">
+                <div class="section-cards__header">
+                    <div class="section-cards__section-left">
+                        <p cards__header-title>Mostrando<section class="cards__header-title-light">&nbsp;15</section>&nbsp;de<section class="cards__header-title-light">&nbsp;90</section>&nbsp;articulos</p>
+                    </div>
+                    <div class="section-cards__section-right">
+                        <p>Ordenar por</p>
+                        <p class="section-right__box">Más recientes</p>
+                    </div>
+                </div>
+                <div class="all-articles-grid">
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-cards__card">
+                        <picture>
+                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                        </picture>
+                        <div class="grid-cards__info">
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">18 Jul 2026</p>
+                                <span>/</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            </div>
+                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <a href="pages/categorias.html" class="grid-cards__link">
+                                Ver todos <span class="section-header__arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div aria-label="Paginación de artículos">
+                    <ul class="pagination">
+                        <li>
+                            <button class="page-btn page-prev" disabled>&larr; ANTERIOR</button>
+                        </li>
+                        <li>
+                            <button class="page-btn active" aria-current="page">1</button>
+                        </li>
+                        <li>
+                            <button class="page-btn">2</button>
+                        </li>
+                        <li>
+                            <button class="page-btn">3</button>
+                        </li>
+                        <li>
+                            <button class="page-btn">4</button>
+                        </li>
+                        <li>
+                            <button class="page-btn">5</button>
+                        </li>
+                        <li>
+                            <button class="page-btn">SIGUIENTE &rarr;</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-grid__section-one">
+                <picture>
+                    <img src="/assets/img/" alt="Noticia destacada" class="section-one__img">
+                </picture>
+                <p>15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p class="section-two__light">NAVEGACIÓN</p>
+                <p>Inicio</p>
+                <p>Categorías</p>
+                <p>Reseñas</p>
+                <p>Comunidad</p>
+                <p>Eventos</p>
+                <p>Contacto</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p section-three__light>CATEGORÍAS</p>
+                <p>Ciberseguridad</p>
+                <p>Computación Cuántica</p>
+                <p>Realidad Virtual</p>
+                <p>Movilidad Eléctrica</p>
+                <p>Exploración Espacial</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p section-four__light>CONTACTO</p>
+                <p>+52 55 1234 5678</p>
+                <p>Computación Cuántica</p>
+                <p>Bucaramanga, Colombia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
+            <div class="footer-bottom__info">
+                <p>Privacidad</p>
+                <p>Términos</p>
+                <p>Cookies</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
