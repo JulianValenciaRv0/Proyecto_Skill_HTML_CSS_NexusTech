@@ -1,44 +1,264 @@
-
-.header-titles{
-    margin: auto;
-    margin-top: 3rem;
-    width: 70vw;
-}
-
-.header-titles__title{
+/* ==========================================================================
+   CATEGORIES PAGE LAYOUT (Pastel Light Theme)
+   ========================================================================== */
+.main-layout {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 2.5rem auto;
     display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
 }
 
-.main-layout{
+/* ==========================================================================
+   SIDEBAR FILTERS (Sticky visual filter bar)
+   ========================================================================== */
+.filter-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    position: sticky;
+    top: 90px;
     display: flex;
-    margin: auto;
-    margin-top: 3rem;
-    width: 70vw;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-card);
+    transition: all var(--transition-normal);
 }
 
-.all-articles-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.filter-sidebar__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.section-cards__header{
+.filter-sidebar__icono-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--accent-primary);
+}
+
+.filter-sidebar__title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+}
+
+.filter-sidebar__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.filter-sidebar__title-categories {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--font-sans);
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.filter-option:hover {
+    color: var(--text-heading);
+}
+
+.filter-option input[type="checkbox"],
+.filter-option input[type="radio"] {
+    accent-color: var(--accent-primary);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.filter-option__label {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--accent-soft-blue);
+    color: var(--accent-primary);
+    padding: 0.15rem 0.6rem;
+    border-radius: var(--radius-full);
+}
+
+.filter-sidebar__button {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 12px var(--accent-blue-glow);
+    font-family: var(--font-sans);
+    margin-top: 0.5rem;
+}
+
+.filter-sidebar__button:hover {
+    background: var(--accent-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   MAIN CONTENT & ARTICLES GRID
+   ========================================================================== */
+.section-cards {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.section-cards__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
     margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    box-shadow: var(--shadow-card);
 }
 
-.section-cards__section-left{
+.cards__header-title {
+    color: var(--text-secondary);
+}
+
+.cards__header-title-light {
+    color: var(--accent-primary);
+    font-weight: 700;
+}
+
+.section-cards__section-right {
     display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 
-.section-cards__section-right{
-    display: flex;
-    gap: 10px;
+.section-right__box {
+    background: var(--bg-page);
+    color: var(--text-heading);
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color var(--transition-fast);
 }
 
-.pagination{
+.section-right__box:hover {
+    border-color: var(--accent-primary);
+}
+
+.all-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+}
+
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+.pagination-wrapper {
+    margin-top: 3.5rem;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-    gap: 10px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.page-btn {
+    padding: 0.6rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.page-btn:hover:not(:disabled) {
+    background: var(--bg-card);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+.page-btn.active {
+    background: var(--accent-primary);
+    color: #ffffff;
+    border-color: var(--accent-primary);
+    box-shadow: 0 4px 10px var(--accent-blue-glow);
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .filter-sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+    }
+
+    .all-articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .all-articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-cards__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
