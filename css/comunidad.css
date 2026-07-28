@@ -1,0 +1,36 @@
+.header-titles{
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+}
+
+.header-titles__title{
+    display: flex;
+}
+
+.amount-users{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.main-layout{
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.forum__header{
+    display: flex;
+    gap: 3rem;
+}
+
+.forum-body{
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+
