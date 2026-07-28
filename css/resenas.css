@@ -1,71 +1,344 @@
-.header-titles{
-    margin: auto;
-    margin-top: 3rem;
-    width: 70vw;
+/* ==========================================================================
+   REVIEWS GRID (4 Columns - Pastel Light Theme matched to user design)
+   ========================================================================== */
+.reviews-section {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 0 auto 3rem;
 }
 
-.header-titles__title{
+.reviews-grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.review-card__subtitle {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--font-sans);
+}
+
+.review-card__stars {
+    color: var(--accent-primary);
+    font-size: 1rem;
+    letter-spacing: 2px;
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.header-second-title {
-  display: flex;
-  margin: auto;
-  margin-top: 3rem;
-  width: 70vw;
-  align-items: center; 
-  gap: 1.5rem;          
-  margin-bottom: 2rem;
+.review-card__score {
+    color: var(--text-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
-.header-second-title h2 {
-  font-size: 1.8rem;
-  color: #1e293b;
-  margin: 0;
-  white-space: nowrap;  
+/* ==========================================================================
+   COMPARISON TABLE (Pastel Light Theme)
+   ========================================================================== */
+.comparison-section {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 0 auto 4rem;
 }
 
-.header-second-title::after {
-  content: "";
-  flex-grow: 1;         
-  height: 1px;          
-  background-color: #cbd5e1; 
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
 }
 
-.all-articles-grid{
-    display: grid;
-    margin: auto;
-    width: 70vw;
-    grid-template-columns: repeat(4,1fr);
-}
-
-.section-cards__header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.table-container{
-    width: 70vw;
-    margin: auto;
+.table-container__products {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
 }
 
 .table-container__products th {
-  padding: 1rem 1.5rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #64748b;
-  letter-spacing: 0.5px;
+    padding: 1.25rem 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    font-family: var(--font-sans);
 }
 
 .table-container__products td {
-  padding: 1rem 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
 }
 
-.opinions-container{
+.table-container__products tbody tr {
+    transition: background-color var(--transition-fast);
+}
+
+.table-container__products tbody tr:hover {
+    background-color: var(--accent-soft-blue);
+}
+
+.table-container__products tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.product-cell {
     display: flex;
-    width: 70vw;
-    margin: auto;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
+.product-cell__name {
+    color: var(--text-heading);
+    font-size: 1.05rem;
+    font-family: var(--font-heading);
+}
+
+.product-cell__category {
+    font-size: 0.7rem;
+    color: var(--accent-primary);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-sans);
+}
+
+.specs-cell {
+    max-width: 340px;
+    line-height: 1.5;
+}
+
+.product-cell__price {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+.product-cell__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rating__stars {
+    color: var(--accent-primary);
+}
+
+.rating__score {
+    font-weight: 700;
+    color: var(--text-heading);
+}
+
+/* ==========================================================================
+   OPINIONS & COMMENTS SECTION
+   ========================================================================== */
+.opinions-section {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 0 auto 4rem;
+}
+
+.opinions-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+}
+
+.opinions-container__section-left {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.section-left__qualification {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-surface);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+}
+
+.qualification__score {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.qualification__stars {
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.form-group__input,
+.form-group__textarea {
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    outline: none;
+    transition: all var(--transition-fast);
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 10px var(--accent-blue-glow);
+}
+
+.submit-btn {
+    padding: 0.85rem 1.5rem;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 12px var(--accent-blue-glow);
+    font-family: var(--font-sans);
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    background: var(--accent-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* Comments Right List */
+.opinions-container__section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.comments-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+}
+
+.comments-title__light {
+    color: var(--accent-primary);
+    font-weight: 400;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.comments-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: var(--shadow-card);
+    transition: transform var(--transition-fast);
+}
+
+.comments-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateX(5px);
+}
+
+.comments-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__header-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+}
+
+.card__header-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.comments_stars {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+}
+
+.comments__text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .opinions-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
