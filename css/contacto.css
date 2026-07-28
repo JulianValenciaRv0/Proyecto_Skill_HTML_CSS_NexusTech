@@ -1,0 +1,38 @@
+.header-titles{
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+}
+
+.header-titles__title{
+    display: flex;
+}
+
+.header-second-title {
+  display: flex;
+  margin: auto;
+  margin-top: 3rem;
+  width: 70vw;
+  align-items: center; 
+  gap: 1.5rem;          
+  margin-bottom: 2rem;
+}
+
+.header-second-title h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin: 0;
+  white-space: nowrap;  
+}
+
+.header-second-title::after {
+  content: "";
+  flex-grow: 1;         
+  height: 1px;          
+  background-color: #cbd5e1; 
+}
+
+.map-image{
+    width: 70vw;
+    margin: auto;
+}
