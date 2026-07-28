@@ -193,7 +193,7 @@
 }
 
 .banner__firstSection {
-    width: 58%;
+    width: 55%;
     padding: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -275,10 +275,10 @@
 }
 
 .banner__secondSection {
-    width: 42%;
-    padding: 1.5rem;
+    width: 45%;
+    padding: 1.25rem;
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
 .secondSection_card {
@@ -297,12 +297,22 @@
     transform: translateY(-3px);
 }
 
+.secondSection_card picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
 .secondSection__img {
     width: 100%;
-    height: 240px;
+    height: 100%;
+    min-height: 280px;
     object-fit: cover;
     object-position: center;
     transition: transform var(--transition-normal);
+    display: block;
 }
 
 .secondSection_card:hover .secondSection__img {
@@ -315,7 +325,8 @@
     flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
-    flex-grow: 1;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-subtle);
 }
 
 .secondSection__tag {
@@ -336,7 +347,7 @@
 }
 
 /* ==========================================================================
-   FEATURED ARTICLES SECTION & CARDS GRID (Pastel Light Theme)
+   FEATURED ARTICLES SECTION & EXPANDABLE CARDS GRID
    ========================================================================== */
 .featured-section {
     padding: 3rem 0 5rem;
@@ -402,6 +413,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    align-items: start;
 }
 
 .grid-cards__card {
@@ -499,9 +511,8 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.6;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
     border-bottom: 1px solid var(--border-subtle);
-    flex-grow: 1;
 }
 
 .grid-cards__link {
@@ -512,10 +523,73 @@
     font-weight: 700;
     color: var(--text-heading);
     padding-top: 0.25rem;
+    text-decoration: none;
 }
 
 .grid-cards__link:hover {
     color: var(--accent-primary);
+}
+
+/* ==========================================================================
+   EXPANDABLE DETAILS COMPONENT (Exclusive to Home Page Cards)
+   ========================================================================== */
+.grid-cards__details {
+    margin-top: 0.5rem;
+}
+
+.grid-cards__details summary.grid-cards__link {
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    transition: color var(--transition-fast);
+}
+
+.grid-cards__details summary::-webkit-details-marker,
+.grid-cards__details summary::marker {
+    display: none;
+}
+
+.grid-cards__details summary.grid-cards__link:hover {
+    color: var(--accent-primary-hover);
+}
+
+.grid-cards__details[open] summary .section-header__arrow {
+    transform: rotate(90deg);
+}
+
+.grid-cards__expandable-content {
+    margin-top: 0.85rem;
+    padding: 0.85rem 1rem;
+    background: var(--accent-soft-blue);
+    border-left: 3px solid var(--accent-primary);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    animation: expandFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grid-cards__expandable-text strong {
+    color: var(--text-heading);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+@keyframes expandFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==========================================================================
