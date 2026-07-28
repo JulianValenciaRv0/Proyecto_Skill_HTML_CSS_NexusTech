@@ -7,208 +7,278 @@
     <meta name="description" content="TechBlog - Las últimas tendencias en tecnología, desarrollo y gadgets.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>TechBlog | Inicio</title>
-
+    <title>Nexus Tech | Inicio</title>
 </head>
 
 <body>
     <header class="main-header">
-        <div class="logo">
-            <h1 class="title">NEXUSTECH</h1>
-        </div>
-        <div class="navbar">
-            <h1>Inicio</h1>
-            <h1>Categorias</h1>
-            <h1>Reseñas</h1>
-            <h1>Comunidad</h1>
-            <h1>Eventos</h1>
-            <h1>Contacto</h1>
+        <div class="main-header__container">
+            <div class="logo">
+                <a href="index.html" class="logo__link">
+                    <h1 class="logo__title">NEXUS<span class="logo__title--accent">TECH</span></h1>
+                </a>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="main-header__checkbox">
+            <label for="menu-toggle" class="main-header__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__link navbar__link--active">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pages/categorias.html" class="navbar__link">Categorías</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pages/resenas.html" class="navbar__link">Reseñas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pages/comunidad.html" class="navbar__link">Comunidad</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pages/eventos.html" class="navbar__link">Eventos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="pages/contacto.html" class="navbar__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
-        <!-------- Seccion del baner --------->
-        <section>
+        <!-------- Seccion del banner --------->
+        <section class="hero-section">
             <div class="banner">
                 <div class="banner__firstSection">
-                    <h1>Explora el futuro, hoy.</h1>
-                    <p>Las ideas, avances y personas que están construyendo el mundo digital. Contado con claridad por Nexus Tech.</p>
+                    <span class="banner__badge">TENDENCIAS 2026</span>
+                    <h1 class="banner__title">Explora las últimas tendencias en tecnología con TechBlog</h1>
+                    <p class="banner__description">Las ideas, avances y personas que están construyendo el mundo digital. Contado con claridad por Nexus Tech.</p>
                     <div class="banner__buttons">
-                        <button class="button_uno">Leer más →</button>
-                        <button class="button_dos">Ver Categorias</button>
+                        <a href="pages/categorias.html" class="banner__btn banner__btn--primary">Leer más →</a>
+                        <a href="pages/categorias.html" class="banner__btn banner__btn--secondary">Ver Categorías</a>
                     </div>
                 </div>
                 <div class="banner__secondSection">
                     <div class="secondSection_card">
                         <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="secondSection__img">
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="secondSection__img">
                         </picture>
-                        <p>HISTORIA DESTACADA</p>
-                        <h1>Texto de la historia</h1>
+                        <div class="secondSection__content">
+                            <span class="secondSection__tag">HISTORIA DESTACADA</span>
+                            <h2 class="secondSection__title">El salto cuántico en procesadores de última generación</h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-------- Seccion del baner --------->
-        <section>
+
+        <!-------- Seccion de articulos destacados --------->
+        <section class="featured-section">
             <div class="articles-section">
                 <div class="section-header">
-                    <p>Selección editorial / 01</p>
+                    <p class="section-header__subtitle">Selección editorial / 01</p>
                     <div class="section-header__title-group">
-                        <h1 class="section-header__title">Lo más relevante<span class="section-header__title--light">de esta semana</span></h1>
+                        <h2 class="section-header__title">Lo más relevante <span class="section-header__title--light">de esta semana</span></h2>
                         <a href="pages/categorias.html" class="section-header__link">
                             Ver todos <span class="section-header__arrow">→</span>
                         </a>
                     </div>
                 </div>
+                
                 <div class="grid-cards">
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    <!-- Tarjeta 1 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Inteligencia Artificial</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★★</span>
+                                <span class="rating-bar__score">4.9</span>
+                            </div>
                             <div class="grid-cards__header">
                                 <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
+                                <span class="grid-cards__divider">·</span>
                                 <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
+                            <h3 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h3>
                             <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Ciberseguridad</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
-                            <div class="grid-cards__header">
-                                <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
-                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★★</span>
+                                <span class="rating-bar__score">4.7</span>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
-                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">17 Jul 2026</p>
+                                <span class="grid-cards__divider">·</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Carlos Mendoza</span></p>
+                            </div>
+                            <h3 class="grid-cards__title">Ciberseguridad en la era de la computación cuántica</h3>
+                            <p class="grid-cards_description">Nuevos algoritmos post-cuánticos emergen para defender la infraestructura informática global contra ataques sofisticados.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Gadgets</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
-                            <div class="grid-cards__header">
-                                <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
-                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★☆</span>
+                                <span class="rating-bar__score">4.6</span>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
-                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">15 Jul 2026</p>
+                                <span class="grid-cards__divider">·</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Elena Torres</span></p>
+                            </div>
+                            <h3 class="grid-cards__title">Avances revolucionarios en baterías de estado sólido</h3>
+                            <p class="grid-cards_description">Vehículos eléctricos con autonomía de más de 1.200 km y cargas ultrarrápidas en menos de diez minutos.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Robótica</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
-                            <div class="grid-cards__header">
-                                <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
-                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★★</span>
+                                <span class="rating-bar__score">4.8</span>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
-                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">14 Jul 2026</p>
+                                <span class="grid-cards__divider">·</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Mateo Ruiz</span></p>
+                            </div>
+                            <h3 class="grid-cards__title">Visión por computador integrada en la robótica asistencial</h3>
+                            <p class="grid-cards_description">La nueva generación de robots domésticos promete autonomía total en tareas cotidianas complejas.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    </article>
+
+                    <!-- Tarjeta 5 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Desarrollo Software</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
-                            <div class="grid-cards__header">
-                                <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
-                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★☆</span>
+                                <span class="rating-bar__score">4.5</span>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
-                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">12 Jul 2026</p>
+                                <span class="grid-cards__divider">·</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Lucía Gomez</span></p>
+                            </div>
+                            <h3 class="grid-cards__title">Nuevos paradigmas en arquitecturas de microservicios</h3>
+                            <p class="grid-cards_description">Cómo las arquitecturas serverless edge están transformando la velocidad de despliegue global.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
-                    <div class="grid-cards__card">
-                        <picture>
-                            <img src="/assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
+                    </article>
+
+                    <!-- Tarjeta 6 -->
+                    <article class="grid-cards__card">
+                        <picture class="grid-cards__picture">
+                            <span class="grid-cards__badge">Tendencias</span>
+                            <img src="assets/img/tecnologia.jpg" alt="Noticia destacada" class="grid-cards__img">
                         </picture>
                         <div class="grid-cards__info">
-                            <div class="grid-cards__header">
-                                <p class="grid-cards__fecha">18 Jul 2026</p>
-                                <span>/</span>
-                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">Sofía Ramírez</span></p>
+                            <div class="rating-bar">
+                                <span class="rating-bar__stars">★★★★★</span>
+                                <span class="rating-bar__score">4.9</span>
                             </div>
-                            <h1 class="grid-cards__title">GPT-5 redefine los límites de la inteligencia artificial generativa</h1>
-                            <p class="grid-cards_description">El nuevo modelo de OpenAI supera a sus predecesores en razonamiento complejo, programación y comprensión del lenguaje natural.</p>
+                            <div class="grid-cards__header">
+                                <p class="grid-cards__fecha">10 Jul 2026</p>
+                                <span class="grid-cards__divider">·</span>
+                                <p class="grid-cards__autor">Por <span class="grid-cards__autor--light">David Vega</span></p>
+                            </div>
+                            <h3 class="grid-cards__title">Redes 6G: Preparando la infraestructura del año 2030</h3>
+                            <p class="grid-cards_description">Pruebas en campo demuestran latencias inferiores al milisegundo y velocidades de transferencia multigigabit.</p>
                             <a href="pages/categorias.html" class="grid-cards__link">
-                                Ver todos <span class="section-header__arrow">→</span>
+                                Leer más <span class="section-header__arrow">→</span>
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-grid__section-one">
-                <picture>
-                    <img src="/assets/img/" alt="Noticia destacada" class="section-one__img">
-                </picture>
-                <p>15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+                <h2 class="footer-grid__brand">NEXUS<span class="footer-grid__brand--accent">TECH</span></h2>
+                <p class="footer-grid__description">15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
             </div>
             <div class="footer-grid__section-list">
-                <p class="section-two__light">NAVEGACIÓN</p>
-                <p>Inicio</p>
-                <p>Categorías</p>
-                <p>Reseñas</p>
-                <p>Comunidad</p>
-                <p>Eventos</p>
-                <p>Contacto</p>
+                <h4 class="footer-grid__title">NAVEGACIÓN</h4>
+                <a href="index.html" class="footer-grid__link">Inicio</a>
+                <a href="pages/categorias.html" class="footer-grid__link">Categorías</a>
+                <a href="pages/resenas.html" class="footer-grid__link">Reseñas</a>
+                <a href="pages/comunidad.html" class="footer-grid__link">Comunidad</a>
+                <a href="pages/eventos.html" class="footer-grid__link">Eventos</a>
+                <a href="pages/contacto.html" class="footer-grid__link">Contacto</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-three__light>CATEGORÍAS</p>
-                <p>Ciberseguridad</p>
-                <p>Computación Cuántica</p>
-                <p>Realidad Virtual</p>
-                <p>Movilidad Eléctrica</p>
-                <p>Exploración Espacial</p>
+                <h4 class="footer-grid__title">CATEGORÍAS</h4>
+                <a href="pages/categorias.html" class="footer-grid__link">Ciberseguridad</a>
+                <a href="pages/categorias.html" class="footer-grid__link">Computación Cuántica</a>
+                <a href="pages/categorias.html" class="footer-grid__link">Realidad Virtual</a>
+                <a href="pages/categorias.html" class="footer-grid__link">Movilidad Eléctrica</a>
+                <a href="pages/categorias.html" class="footer-grid__link">Exploración Espacial</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-four__light>CONTACTO</p>
-                <p>+52 55 1234 5678</p>
-                <p>Computación Cuántica</p>
-                <p>Bucaramanga, Colombia</p>
+                <h4 class="footer-grid__title">CONTACTO</h4>
+                <p class="footer-grid__info">+52 55 1234 5678</p>
+                <p class="footer-grid__info">contacto@nexustech.io</p>
+                <p class="footer-grid__info">Bucaramanga, Colombia</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
             <div class="footer-bottom__info">
-                <p>Privacidad</p>
-                <p>Términos</p>
-                <p>Cookies</p>
+                <a href="#" class="footer-bottom__link">Privacidad</a>
+                <a href="#" class="footer-bottom__link">Términos</a>
+                <a href="#" class="footer-bottom__link">Cookies</a>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
