@@ -635,17 +635,22 @@
     .banner {
         flex-direction: column;
     }
-    .banner__firstSection, .banner__secondSection {
+
+    .banner__firstSection,
+    .banner__secondSection {
         width: 100%;
     }
+
     .banner__firstSection {
         padding: 2.5rem;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
     }
+
     .grid-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -655,12 +660,15 @@
     .grid-cards {
         grid-template-columns: 1fr;
     }
+
     .banner__firstSection {
         padding: 1.5rem;
     }
+
     .banner__title {
         font-size: 1.8rem;
     }
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
