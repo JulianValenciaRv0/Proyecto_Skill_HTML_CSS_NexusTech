@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/eventos.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="logo">
+            <h1 class="title">NEXUSTECH</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__link navbar__link--active">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pages/categorias.html" class="navbar__link">Categorías</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pages/resenas.html" class="navbar__link">Reseñas</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Comunidad</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Eventos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contacto.html" class="navbar__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-------- Seccion del title header --------->
+        <section>
+            <div class="header-titles">
+                <p class="header-titles__subtitle">Agenda tecnológica / 05</p>
+                <h1 class="header-titles__title">Eventos <section class="header-titles__title-light">&nbsp;tecnológicos</section></h1>
+                <p class="header-titles__description">Conferencias, lanzamientos y encuentros que marcan el ritmo de la industria. No te pierdas ninguna fecha clave de la tecnología mundial.</p>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <!-- Título con la línea divisora -->
+            <div class="header-second-title">
+                <h2>Calendario de eventos</h2>
+            </div>
+
+            <!-- Tarjeta principal del calendario -->
+            <div class="calendar-card">
+                
+                <!-- Encabezado del Calendario: Mes, Botones y Leyenda -->
+                <div class="calendar-header">
+                <div class="calendar-controls">
+                    <button class="btn-arrow" aria-label="Mes anterior">&lt;</button>
+                    <h3 class="calendar-month">Octubre 2026</h3>
+                    <button class="btn-arrow" aria-label="Mes siguiente">&gt;</button>
+                </div>
+
+                <div class="calendar-legend">
+                    <span class="legend-item"><span class="dot conferencia"></span>Conferencia</span>
+                    <span class="legend-item"><span class="dot lanzamiento"></span>Lanzamiento</span>
+                    <span class="legend-item"><span class="dot meetup"></span>Meetup</span>
+                </div>
+                </div>
+
+                <!-- Días de la semana -->
+                <div class="calendar-weekdays">
+                <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                </div>
+
+                <!-- Rejilla de días del mes -->
+                <div class="calendar-grid">
+                <!-- Días vacíos para ajustar dónde empieza el mes (Octubre 2026 empieza un Jueves = 3 días vacíos) -->
+                <div class="day-card empty"></div>
+                <div class="day-card empty"></div>
+                <div class="day-card empty"></div>
+
+                <!-- Días numerados -->
+                <div class="day-card"><span class="day-number">1</span></div>
+                <div class="day-card"><span class="day-number">2</span></div>
+                <div class="day-card"><span class="day-number">3</span></div>
+                <div class="day-card"><span class="day-number">4</span></div>
+                <div class="day-card"><span class="day-number">5</span></div>
+
+                <!-- Día con evento (Conferencia) -->
+                <div class="day-card has-event">
+                    <span class="day-number">6</span>
+                    <span class="event-badge conferencia">Nexus DevSummit</span>
+                </div>
+
+                <div class="day-card"><span class="day-number">7</span></div>
+                <div class="day-card"><span class="day-number">8</span></div>
+                <div class="day-card"><span class="day-number">9</span></div>
+                <div class="day-card"><span class="day-number">10</span></div>
+                <div class="day-card"><span class="day-number">11</span></div>
+
+                <!-- Día con evento (Lanzamiento) -->
+                <div class="day-card has-event">
+                    <span class="day-number">12</span>
+                    <span class="event-badge lanzamiento">Lanzamiento Chip N3</span>
+                </div>
+
+                <div class="day-card"><span class="day-number">13</span></div>
+                <div class="day-card"><span class="day-number">14</span></div>
+                <div class="day-card"><span class="day-number">15</span></div>
+                <div class="day-card"><span class="day-number">16</span></div>
+                <div class="day-card"><span class="day-number">17</span></div>
+
+                <!-- Día con evento (Meetup) -->
+                <div class="day-card has-event">
+                    <span class="day-number">18</span>
+                    <span class="event-badge meetup">Meetup IA Local</span>
+                </div>
+
+                <div class="day-card"><span class="day-number">19</span></div>
+                <div class="day-card"><span class="day-number">20</span></div>
+                <div class="day-card"><span class="day-number">21</span></div>
+                <div class="day-card"><span class="day-number">22</span></div>
+
+                <!-- Día con evento (Conferencia) -->
+                <div class="day-card has-event">
+                    <span class="day-number">23</span>
+                    <span class="event-badge conferencia">Global Tech Expo</span>
+                </div>
+
+                <div class="day-card"><span class="day-number">24</span></div>
+                <div class="day-card"><span class="day-number">25</span></div>
+                <div class="day-card"><span class="day-number">26</span></div>
+                <div class="day-card"><span class="day-number">27</span></div>
+                <div class="day-card"><span class="day-number">28</span></div>
+
+                <!-- Día con evento (Lanzamiento) -->
+                <div class="day-card has-event">
+                    <span class="day-number">29</span>
+                    <span class="event-badge lanzamiento">Nuevo Flagship X</span>
+                </div>
+
+                <div class="day-card"><span class="day-number">30</span></div>
+                <div class="day-card"><span class="day-number">31</span></div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="header-second-title">
+                <h2>Eventos destacados</h2>
+            </div>
+            <div class="cards-events">
+                <div class="cards_events__card">
+                    <picture>
+                        <img class="card__image" src="/assets/img/tecnologia.jpg" alt="">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">23 - 25 Oct, 2026</span>
+                            <span class="header__location">Las Vegas, EE. UU.</span>
+                        </div>
+                        <h2>Global Tech Expo 2026</h2>
+                        <p>La feria tecnológica más grande del año reúne a las principales marcas para presentar sus innovaciones en IA, hardware y movilidad. Tres días de keynotes, demos y networking.</p>
+                        <a class="header__link" href="">Sitio web oficial<span class="header__arrow">➝</span></a>
+                    </div>
+                </div>
+                <div class="cards_events__card">
+                    <picture>
+                        <img class="card__image" src="/assets/img/tecnologia.jpg" alt="">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">23 - 25 Oct, 2026</span>
+                            <span class="header__location">Las Vegas, EE. UU.</span>
+                        </div>
+                        <h2>Global Tech Expo 2026</h2>
+                        <p>La feria tecnológica más grande del año reúne a las principales marcas para presentar sus innovaciones en IA, hardware y movilidad. Tres días de keynotes, demos y networking.</p>
+                        <a class="header__link" href="">Sitio web oficial<span class="header__arrow">➝</span></a>
+                    </div>
+                </div>
+                <div class="cards_events__card">
+                    <picture>
+                        <img class="card__image" src="/assets/img/tecnologia.jpg" alt="">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">23 - 25 Oct, 2026</span>
+                            <span class="header__location">Las Vegas, EE. UU.</span>
+                        </div>
+                        <h2>Global Tech Expo 2026</h2>
+                        <p>La feria tecnológica más grande del año reúne a las principales marcas para presentar sus innovaciones en IA, hardware y movilidad. Tres días de keynotes, demos y networking.</p>
+                        <a class="header__link" href="">Sitio web oficial<span class="header__arrow">➝</span></a>
+                    </div>
+                </div>
+                <div class="cards_events__card">
+                    <picture>
+                        <img class="card__image" src="/assets/img/tecnologia.jpg" alt="">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">23 - 25 Oct, 2026</span>
+                            <span class="header__location">Las Vegas, EE. UU.</span>
+                        </div>
+                        <h2>Global Tech Expo 2026</h2>
+                        <p>La feria tecnológica más grande del año reúne a las principales marcas para presentar sus innovaciones en IA, hardware y movilidad. Tres días de keynotes, demos y networking.</p>
+                        <a class="header__link" href="">Sitio web oficial<span class="header__arrow">➝</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-grid__section-one">
+                <picture>
+                    <img src="/assets/img/" alt="Noticia destacada" class="section-one__img">
+                </picture>
+                <p>15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p class="section-two__light">NAVEGACIÓN</p>
+                <p>Inicio</p>
+                <p>Categorías</p>
+                <p>Reseñas</p>
+                <p>Comunidad</p>
+                <p>Eventos</p>
+                <p>Contacto</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p section-three__light>CATEGORÍAS</p>
+                <p>Ciberseguridad</p>
+                <p>Computación Cuántica</p>
+                <p>Realidad Virtual</p>
+                <p>Movilidad Eléctrica</p>
+                <p>Exploración Espacial</p>
+            </div>
+            <div class="footer-grid__section-list">
+                <p section-four__light>CONTACTO</p>
+                <p>+52 55 1234 5678</p>
+                <p>Computación Cuántica</p>
+                <p>Bucaramanga, Colombia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
+            <div class="footer-bottom__info">
+                <p>Privacidad</p>
+                <p>Términos</p>
+                <p>Cookies</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
