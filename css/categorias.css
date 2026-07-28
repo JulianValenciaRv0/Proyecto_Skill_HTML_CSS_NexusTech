@@ -4,7 +4,7 @@
 .main-layout {
     width: 85vw;
     max-width: 1280px;
-    margin: 2.5rem auto;
+    margin: 2.5rem auto 4rem;
     display: flex;
     gap: 2.5rem;
     align-items: flex-start;
@@ -179,6 +179,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem;
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -228,11 +229,12 @@
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES)
+   RESPONSIVE DESIGN (MEDIA QUERIES - Tablet & Mobile Full Width)
    ========================================================================== */
 @media (max-width: 1024px) {
     .main-layout {
         flex-direction: column;
+        width: 90vw;
     }
 
     .filter-sidebar {
@@ -247,8 +249,14 @@
 }
 
 @media (max-width: 640px) {
+    .main-layout {
+        width: 92vw;
+        margin: 1.5rem auto 3rem;
+    }
+
     .all-articles-grid {
         grid-template-columns: 1fr;
+        gap: 1.25rem;
     }
 
     .section-cards__header {

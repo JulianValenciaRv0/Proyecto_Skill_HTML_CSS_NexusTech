@@ -680,6 +680,15 @@
 }
 
 @media (max-width: 640px) {
+    .header-titles,
+    .articles-section,
+    .banner,
+    .main-header__container,
+    .footer-grid,
+    .footer-bottom {
+        width: 92vw;
+    }
+
     .grid-cards {
         grid-template-columns: 1fr;
     }
