@@ -70,9 +70,17 @@
     border-radius: 50%;
 }
 
-.dot.conferencia { background-color: var(--accent-primary); }
-.dot.lanzamiento { background-color: #3b82f6; }
-.dot.meetup { background-color: #8b5cf6; }
+.dot.conferencia {
+    background-color: var(--accent-primary);
+}
+
+.dot.lanzamiento {
+    background-color: #3b82f6;
+}
+
+.dot.meetup {
+    background-color: #8b5cf6;
+}
 
 .calendar-weekdays {
     display: grid;
@@ -138,9 +146,17 @@
     font-family: var(--font-sans);
 }
 
-.event-badge.conferencia { background-color: var(--accent-primary); }
-.event-badge.lanzamiento { background-color: #3b82f6; }
-.event-badge.meetup { background-color: #8b5cf6; }
+.event-badge.conferencia {
+    background-color: var(--accent-primary);
+}
+
+.event-badge.lanzamiento {
+    background-color: #3b82f6;
+}
+
+.event-badge.meetup {
+    background-color: #8b5cf6;
+}
 
 /* ==========================================================================
    FEATURED EVENTS CARDS (2 Columns)
@@ -184,6 +200,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform var(--transition-normal);
+    object-position: 10% center;
 }
 
 .cards_events__card:hover .card__image {
