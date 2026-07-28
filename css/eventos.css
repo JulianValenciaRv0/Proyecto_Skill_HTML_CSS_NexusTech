@@ -1,0 +1,189 @@
+.header-titles{
+    margin: auto;
+    margin-top: 3rem;
+    width: 70vw;
+}
+
+.header-titles__title{
+    display: flex;
+}
+
+.header-second-title {
+  display: flex;
+  margin: auto;
+  margin-top: 3rem;
+  width: 70vw;
+  align-items: center; 
+  gap: 1.5rem;          
+  margin-bottom: 2rem;
+}
+
+.header-second-title h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin: 0;
+  white-space: nowrap;  
+}
+
+.header-second-title::after {
+  content: "";
+  flex-grow: 1;         
+  height: 1px;          
+  background-color: #cbd5e1; 
+}
+
+/*Calendario*/
+
+/* Contenedor principal de la sección */
+.events-section {
+  width: 70vw;
+  margin: 0 auto 4rem auto;
+}
+
+/* Tarjeta Blanca Externa */
+.calendar-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+/* Top bar: Selector de Mes + Leyendas */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.calendar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calendar-month {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin: 0;
+}
+
+.btn-arrow {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  color: #64748b;
+  font-weight: bold;
+}
+
+/* Leyenda superior */
+.calendar-legend {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.conferencia { background-color: #60a5fa; }
+.dot.lanzamiento { background-color: #2563eb; }
+.dot.meetup { background-color: #cbd5e1; }
+
+/* Días de la semana (L, M, X, J, V, S, D) */
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+/* Grilla del calendario de 7 columnas */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+}
+
+/* Tarjeta individual de cada día */
+.day-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  min-height: 85px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.day-card.empty {
+  border: none;
+  background: transparent;
+}
+
+.day-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Estilo para días con evento */
+.day-card.has-event {
+  background-color: #f0f7ff;
+  border-color: #bfdbfe;
+}
+
+/* Etiquetas de eventos dentro del día */
+.event-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-badge.conferencia { background-color: #60a5fa; }
+.event-badge.lanzamiento { background-color: #2563eb; }
+.event-badge.meetup { 
+  background-color: #e2e8f0; 
+  color: #1e293b; 
+}
+
+/* Seccion cards eventos destacados*/
+
+.cards-events{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cards_events__card{
+    border: 2px solid black;
+    display: flex;
+}
+
+.card__image{
+    width: 400px;
+}
