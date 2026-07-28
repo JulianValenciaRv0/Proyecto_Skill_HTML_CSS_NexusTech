@@ -53,100 +53,126 @@
     </header>
 
     <main>
-        <!-------- Seccion del title header --------->
+        <!-------- Seccion Header Titles --------->
         <section>
             <div class="header-titles">
-                <p class="header-titles__subtitle">Estamos en contacto / 06</p>
+                <p class="header-titles__subtitle">Atención e informes / 06</p>
                 <h1 class="header-titles__title">Ponte en contacto <span class="header-titles__title-light">con nosotros</span></h1>
-                <p class="header-titles__description">¿Tienes una propuesta editorial, consultas publicitarias o simplemente quieres saludarnos? Déjanos un mensaje y responderemos lo antes posible.</p>
+                <p class="header-titles__description">¿Tienes una propuesta editorial, consulta sobre patrocinios o sugerencia? Escríbenos y nuestro equipo te responderá en menos de 24 horas.</p>
             </div>
         </section>
 
-        <!-------- Seccion de contacto --------->
+        <!-------- Layout Contacto --------->
         <section class="contact-section">
             <div class="contact-layout">
-                <!-- Formulario -->
-                <div class="contact-card">
-                    <h2 class="contact-card__title">Envíanos un mensaje</h2>
-                    <p class="contact-card__subtitle">Completa los campos a continuación para comunicarte con nuestro equipo.</p>
-                    
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name" class="form-group__label">Nombre completo</label>
-                                <input type="text" id="name" class="form-group__input" placeholder="Tu nombre" required>
+                <aside class="contact-info-sidebar">
+                    <div class="contact-card">
+                        <h2 class="contact-card__title">Información de contacto</h2>
+                        <div class="contact-card__list">
+                            <div class="contact-item">
+                                <span class="contact-item__icon">📍</span>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Ubicación</span>
+                                    <span class="contact-item__value">Bucaramanga, Santander, Colombia</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="email" class="form-group__label">Correo electrónico</label>
-                                <input type="email" id="email" class="form-group__input" placeholder="tu@correo.com" required>
+                            <div class="contact-item">
+                                <span class="contact-item__icon">✉️</span>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Correo Electrónico</span>
+                                    <span class="contact-item__value">contacto@nexustech.io</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-item__icon">📞</span>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Teléfono</span>
+                                    <span class="contact-item__value">+52 55 1234 5678</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-item__icon">🕒</span>
+                                <div class="contact-item__text">
+                                    <span class="contact-item__label">Horario de atención</span>
+                                    <span class="contact-item__value">Lunes a Viernes: 8:00 AM - 6:00 PM</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone" class="form-group__label">Teléfono (opcional)</label>
-                                <input type="tel" id="phone" class="form-group__input" placeholder="+52 55 ...">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" class="form-group__label">Asunto</label>
-                                <select id="subject" class="form-group__select" required>
-                                    <option value="" disabled selected>Selecciona un asunto</option>
-                                    <option value="editorial">Propuesta Editorial</option>
-                                    <option value="publicidad">Publicidad y Patrocinios</option>
-                                    <option value="soporte">Soporte Técnico</option>
-                                    <option value="otro">Otro motivo</option>
-                                </select>
-                            </div>
+                    <!-- Tarjeta de Redes Sociales con Iconos Animados -->
+                    <div class="social-links-card">
+                        <h2 class="social-links-card__title">Nuestras Redes Sociales</h2>
+                        <p class="social-links-card__subtitle">Pasa el cursor por cada red para ver el efecto animado:</p>
+                        <div class="social-grid">
+                            <a href="#" class="social-btn social-btn--twitter" aria-label="Twitter X">
+                                <span class="social-btn__icon">𝕏</span>
+                                <span class="social-btn__name">Twitter / X</span>
+                            </a>
+                            <a href="#" class="social-btn social-btn--linkedin" aria-label="LinkedIn">
+                                <span class="social-btn__icon">in</span>
+                                <span class="social-btn__name">LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-btn social-btn--github" aria-label="GitHub">
+                                <span class="social-btn__icon">⌨</span>
+                                <span class="social-btn__name">GitHub</span>
+                            </a>
+                            <a href="#" class="social-btn social-btn--youtube" aria-label="YouTube">
+                                <span class="social-btn__icon">▶</span>
+                                <span class="social-btn__name">YouTube</span>
+                            </a>
+                            <a href="#" class="social-btn social-btn--instagram" aria-label="Instagram">
+                                <span class="social-btn__icon">📷</span>
+                                <span class="social-btn__name">Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+                <div class="contact-form-card">
+                    <h2 class="contact-form-card__title">Envíanos un mensaje</h2>
+                    <p class="contact-form-card__description">Completa el siguiente formulario y nos pondremos en contacto a la brevedad.</p>
+
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre" class="form-group__label">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-group__input" placeholder="Ej. Ana María Silva" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="message" class="form-group__label">Mensaje</label>
-                            <textarea id="message" class="form-group__textarea" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            <label for="email" class="form-group__label">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" class="form-group__input" placeholder="ana.silva@ejemplo.com" required>
                         </div>
 
-                        <button type="submit" class="contact-submit-btn">Enviar mensaje</button>
+                        <div class="form-group">
+                            <label for="asunto" class="form-group__label">Asunto *</label>
+                            <select id="asunto" name="asunto" class="form-group__select" required>
+                                <option value="" disabled selected>Selecciona un motivo</option>
+                                <option value="prensa">Propuesta de prensa / Editorial</option>
+                                <option value="patrocinio">Patrocinios y publicidad</option>
+                                <option value="sugerencia">Sugerencia o feedback</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" class="form-group__label">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" class="form-group__textarea" placeholder="Escribe aquí tu mensaje en detalle..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit-btn">ENVIAR MENSAJE →</button>
                     </form>
                 </div>
+            </div>
+        </section>
 
-                <!-- Información de contacto & Mapa -->
-                <div class="contact-info-sidebar">
-                    <div class="info-box">
-                        <div class="info-box__item">
-                            <div class="info-box__icon">📍</div>
-                            <div class="info-box__details">
-                                <span class="info-box__label">DIRECCIÓN</span>
-                                <span class="info-box__value">Bucaramanga, Colombia</span>
-                                <span class="info-box__subtext">Oficina Central Nexus Tech</span>
-                            </div>
-                        </div>
-
-                        <div class="info-box__item">
-                            <div class="info-box__icon">✉️</div>
-                            <div class="info-box__details">
-                                <span class="info-box__label">CORREO ELECTRÓNICO</span>
-                                <span class="info-box__value">contacto@nexustech.io</span>
-                                <span class="info-box__subtext">Respuesta en menos de 24 horas</span>
-                            </div>
-                        </div>
-
-                        <div class="info-box__item">
-                            <div class="info-box__icon">📞</div>
-                            <div class="info-box__details">
-                                <span class="info-box__label">TELÉFONO</span>
-                                <span class="info-box__value">+52 55 1234 5678</span>
-                                <span class="info-box__subtext">Lun - Vie: 9:00 - 18:00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="map-card">
-                        <div class="map-card__placeholder">
-                            <span class="map-card__pin">📍</span>
-                            <h3 class="map-card__location-title">Nexus Tech Headquarters</h3>
-                            <p>Bucaramanga, Santander, Colombia</p>
-                        </div>
-                    </div>
-                </div>
+        <!-------- Seccion Mapa --------->
+        <section class="map-section">
+            <div class="header-second-title">
+                <h2>Nuestra ubicación</h2>
+            </div>
+            <div class="map-container">
+                <img src="../assets/img/maps.jpeg" alt="Ubicación de Nexus Tech" class="map-container__img">
             </div>
         </section>
     </main>
@@ -156,6 +182,24 @@
             <div class="footer-grid__section-one">
                 <h2 class="footer-grid__brand">NEXUS<span class="footer-grid__brand--accent">TECH</span></h2>
                 <p class="footer-grid__description">15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-socials__link" aria-label="Twitter">
+                        <span class="footer-socials__icon">𝕏</span>
+                        <span class="footer-socials__name">Twitter</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                        <span class="footer-socials__icon">in</span>
+                        <span class="footer-socials__name">LinkedIn</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="GitHub">
+                        <span class="footer-socials__icon">⌨</span>
+                        <span class="footer-socials__name">GitHub</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="YouTube">
+                        <span class="footer-socials__icon">▶</span>
+                        <span class="footer-socials__name">YouTube</span>
+                    </a>
+                </div>
             </div>
             <div class="footer-grid__section-list">
                 <h4 class="footer-grid__title">NAVEGACIÓN</h4>
@@ -176,9 +220,9 @@
             </div>
             <div class="footer-grid__section-list">
                 <h4 class="footer-grid__title">CONTACTO</h4>
-                <p class="footer-grid__info">+52 55 1234 5678</p>
-                <p class="footer-grid__info">contacto@nexustech.io</p>
-                <p class="footer-grid__info">Bucaramanga, Colombia</p>
+                <p class="footer-grid__info">📍 Bucaramanga, Colombia</p>
+                <p class="footer-grid__info">✉️ contacto@nexustech.io</p>
+                <p class="footer-grid__info">📞 +52 55 1234 5678</p>
             </div>
         </div>
         <div class="footer-bottom">
