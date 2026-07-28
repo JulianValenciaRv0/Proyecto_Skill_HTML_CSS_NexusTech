@@ -301,6 +301,7 @@
     width: 100%;
     height: 240px;
     object-fit: cover;
+    object-position: center;
     transition: transform var(--transition-normal);
 }
 
@@ -517,26 +518,8 @@
     color: var(--accent-primary);
 }
 
-/* Star rating style in cards */
-.rating-bar {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.9rem;
-}
-
-.rating-bar__stars {
-    color: var(--accent-primary);
-}
-
-.rating-bar__score {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--text-primary);
-}
-
 /* ==========================================================================
-   FOOTER (Pastel Light Theme)
+   FOOTER & SOCIAL MEDIA (Pastel Light Theme)
    ========================================================================== */
 .main-footer {
     background-color: #ffffff;
@@ -571,7 +554,47 @@
     color: var(--text-secondary);
     font-size: 0.9rem;
     line-height: 1.6;
-    max-width: 320px;
+    max-width: 340px;
+}
+
+/* Animated Social Links in Footer */
+.footer-socials {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.footer-socials__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.85rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.footer-socials__link:hover {
+    background: var(--accent-primary);
+    color: #ffffff;
+    border-color: var(--accent-primary);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 4px 12px var(--accent-blue-glow);
+}
+
+.footer-socials__icon {
+    font-size: 0.85rem;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials__link:hover .footer-socials__icon {
+    transform: rotate(10deg);
 }
 
 .footer-grid__section-list {
