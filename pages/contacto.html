@@ -1,120 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contacto.css">
-    <title>Document</title>
+    <meta name="description" content="Ponte en contacto con el equipo editorial de Nexus Tech.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Nexus Tech | Contacto</title>
 </head>
+
 <body>
-     <header class="main-header">
-        <div class="logo">
-            <h1 class="title">NEXUSTECH</h1>
+    <header class="main-header">
+        <div class="main-header__container">
+            <div class="logo">
+                <a href="../index.html" class="logo__link">
+                    <h1 class="logo__title">NEXUS<span class="logo__title--accent">TECH</span></h1>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="main-header__checkbox">
+            <label for="menu-toggle" class="main-header__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__link">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="categorias.html" class="navbar__link">Categorías</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="resenas.html" class="navbar__link">Reseñas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="comunidad.html" class="navbar__link">Comunidad</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="eventos.html" class="navbar__link">Eventos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contacto.html" class="navbar__link navbar__link--active">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="../index.html" class="navbar__link navbar__link--active">Inicio</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/categorias.html" class="navbar__link">Categorías</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/resenas.html" class="navbar__link">Reseñas</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/comunidad.html" class="navbar__link">Comunidad</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/eventos.html" class="navbar__link">Eventos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/contacto.html" class="navbar__link">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
+
     <main>
-         <!-------- Seccion del title header --------->
+        <!-------- Seccion del title header --------->
         <section>
             <div class="header-titles">
-                <p class="header-titles__subtitle">Estamos para ayudarte / 06</p>
-                <h1 class="header-titles__title">Hablemos de<section class="header-titles__title-light">&nbsp;tu proyecto</section></h1>
-                <p class="header-titles__description">¿Tienes una idea, una pregunta o quieres colaborar con Nexus Tech? Escríbenos y nuestro equipo te responderá lo antes posible.</p>
+                <p class="header-titles__subtitle">Estamos en contacto / 06</p>
+                <h1 class="header-titles__title">Ponte en contacto <span class="header-titles__title-light">con nosotros</span></h1>
+                <p class="header-titles__description">¿Tienes una propuesta editorial, consultas publicitarias o simplemente quieres saludarnos? Déjanos un mensaje y responderemos lo antes posible.</p>
             </div>
         </section>
 
-        <!-------- Seccion del title contacto --------->
-        <section>
-            <div class="contact-container">
-                <div class="form">
+        <!-------- Seccion de contacto --------->
+        <section class="contact-section">
+            <div class="contact-layout">
+                <!-- Formulario -->
+                <div class="contact-card">
+                    <h2 class="contact-card__title">Envíanos un mensaje</h2>
+                    <p class="contact-card__subtitle">Completa los campos a continuación para comunicarte con nuestro equipo.</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-group__label">Nombre completo</label>
+                                <input type="text" id="name" class="form-group__input" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-group__label">Correo electrónico</label>
+                                <input type="email" id="email" class="form-group__input" placeholder="tu@correo.com" required>
+                            </div>
+                        </div>
 
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-group__label">Teléfono (opcional)</label>
+                                <input type="tel" id="phone" class="form-group__input" placeholder="+52 55 ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-group__label">Asunto</label>
+                                <select id="subject" class="form-group__select" required>
+                                    <option value="" disabled selected>Selecciona un asunto</option>
+                                    <option value="editorial">Propuesta Editorial</option>
+                                    <option value="publicidad">Publicidad y Patrocinios</option>
+                                    <option value="soporte">Soporte Técnico</option>
+                                    <option value="otro">Otro motivo</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-group__label">Mensaje</label>
+                            <textarea id="message" class="form-group__textarea" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-submit-btn">Enviar mensaje</button>
+                    </form>
                 </div>
-                <div class="contact-info"></div>
-                <div class="social-pages"></div>
-            </div>
-        </section>
 
-        <section>
-            <div class="header-second-title">
-                <h2>Reseñas destacadas</h2>
-            </div>
-            <div class="map-image">
-                <div class="location">
-                    <div class="location__title">
-                        <span class="location__icon-location"></span>
+                <!-- Información de contacto & Mapa -->
+                <div class="contact-info-sidebar">
+                    <div class="info-box">
+                        <div class="info-box__item">
+                            <div class="info-box__icon">📍</div>
+                            <div class="info-box__details">
+                                <span class="info-box__label">DIRECCIÓN</span>
+                                <span class="info-box__value">Bucaramanga, Colombia</span>
+                                <span class="info-box__subtext">Oficina Central Nexus Tech</span>
+                            </div>
+                        </div>
+
+                        <div class="info-box__item">
+                            <div class="info-box__icon">✉️</div>
+                            <div class="info-box__details">
+                                <span class="info-box__label">CORREO ELECTRÓNICO</span>
+                                <span class="info-box__value">contacto@nexustech.io</span>
+                                <span class="info-box__subtext">Respuesta en menos de 24 horas</span>
+                            </div>
+                        </div>
+
+                        <div class="info-box__item">
+                            <div class="info-box__icon">📞</div>
+                            <div class="info-box__details">
+                                <span class="info-box__label">TELÉFONO</span>
+                                <span class="info-box__value">+52 55 1234 5678</span>
+                                <span class="info-box__subtext">Lun - Vie: 9:00 - 18:00</span>
+                            </div>
+                        </div>
                     </div>
-                    <span class="location__address">Calle Innovación 24, 28010 Madrid, España</span>
+
+                    <div class="map-card">
+                        <div class="map-card__placeholder">
+                            <span class="map-card__pin">📍</span>
+                            <h3 class="map-card__location-title">Nexus Tech Headquarters</h3>
+                            <p>Bucaramanga, Santander, Colombia</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-grid__section-one">
-                <picture>
-                    <img src="/assets/img/" alt="Noticia destacada" class="section-one__img">
-                </picture>
-                <p>15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+                <h2 class="footer-grid__brand">NEXUS<span class="footer-grid__brand--accent">TECH</span></h2>
+                <p class="footer-grid__description">15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
             </div>
             <div class="footer-grid__section-list">
-                <p class="section-two__light">NAVEGACIÓN</p>
-                <p>Inicio</p>
-                <p>Categorías</p>
-                <p>Reseñas</p>
-                <p>Comunidad</p>
-                <p>Eventos</p>
-                <p>Contacto</p>
+                <h4 class="footer-grid__title">NAVEGACIÓN</h4>
+                <a href="../index.html" class="footer-grid__link">Inicio</a>
+                <a href="categorias.html" class="footer-grid__link">Categorías</a>
+                <a href="resenas.html" class="footer-grid__link">Reseñas</a>
+                <a href="comunidad.html" class="footer-grid__link">Comunidad</a>
+                <a href="eventos.html" class="footer-grid__link">Eventos</a>
+                <a href="contacto.html" class="footer-grid__link">Contacto</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-three__light>CATEGORÍAS</p>
-                <p>Ciberseguridad</p>
-                <p>Computación Cuántica</p>
-                <p>Realidad Virtual</p>
-                <p>Movilidad Eléctrica</p>
-                <p>Exploración Espacial</p>
+                <h4 class="footer-grid__title">CATEGORÍAS</h4>
+                <a href="categorias.html" class="footer-grid__link">Ciberseguridad</a>
+                <a href="categorias.html" class="footer-grid__link">Computación Cuántica</a>
+                <a href="categorias.html" class="footer-grid__link">Realidad Virtual</a>
+                <a href="categorias.html" class="footer-grid__link">Movilidad Eléctrica</a>
+                <a href="categorias.html" class="footer-grid__link">Exploración Espacial</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-four__light>CONTACTO</p>
-                <p>+52 55 1234 5678</p>
-                <p>Computación Cuántica</p>
-                <p>Bucaramanga, Colombia</p>
+                <h4 class="footer-grid__title">CONTACTO</h4>
+                <p class="footer-grid__info">+52 55 1234 5678</p>
+                <p class="footer-grid__info">contacto@nexustech.io</p>
+                <p class="footer-grid__info">Bucaramanga, Colombia</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
             <div class="footer-bottom__info">
-                <p>Privacidad</p>
-                <p>Términos</p>
-                <p>Cookies</p>
+                <a href="#" class="footer-bottom__link">Privacidad</a>
+                <a href="#" class="footer-bottom__link">Términos</a>
+                <a href="#" class="footer-bottom__link">Cookies</a>
             </div>
         </div>
     </footer>
-
 </body>
+
 </html>
