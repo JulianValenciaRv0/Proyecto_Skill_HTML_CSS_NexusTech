@@ -1,53 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/comunidad.css">
-    <title>Document</title>
+    <meta name="description" content="Comunidad y foro de discusión de Nexus Tech.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comunidad.css">
+    <title>Nexus Tech | Comunidad</title>
 </head>
+
 <body>
     <header class="main-header">
-        <div class="logo">
-            <h1 class="title">NEXUSTECH</h1>
+        <div class="main-header__container">
+            <div class="logo">
+                <a href="../index.html" class="logo__link">
+                    <h1 class="logo__title">NEXUS<span class="logo__title--accent">TECH</span></h1>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="main-header__checkbox">
+            <label for="menu-toggle" class="main-header__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__link">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="categorias.html" class="navbar__link">Categorías</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="resenas.html" class="navbar__link">Reseñas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="comunidad.html" class="navbar__link navbar__link--active">Comunidad</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="eventos.html" class="navbar__link">Eventos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contacto.html" class="navbar__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a href="../index.html" class="navbar__link navbar__link--active">Inicio</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/categorias.html" class="navbar__link">Categorías</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/pages/resenas.html" class="navbar__link">Reseñas</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contacto.html" class="navbar__link">Comunidad</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contacto.html" class="navbar__link">Eventos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="contacto.html" class="navbar__link">Contacto</a>
-                </li>
-            </ul>
-        </nav>
     </header>
+
     <main>
         <!-------- Seccion del title header --------->
         <section>
             <div class="header-titles">
                 <p class="header-titles__subtitle">Espacio de encuentro / 04</p>
-                <h1 class="header-titles__title">Comunidad <section class="header-titles__title-light">&nbsp;Nexus Tech</section></h1>
+                <h1 class="header-titles__title">Comunidad <span class="header-titles__title-light">Nexus Tech</span></h1>
                 <p class="header-titles__description">Un lugar para debatir, compartir experiencias y aprender de otros apasionados por la tecnología. Únete a la conversación.</p>
             </div>
         </section>
 
         <!-------- Seccion numero de usuarios --------->
-        <section>
+        <section class="stats-section">
             <div class="amount-users">
                 <div class="amount-users__card-users">
                     <h2 class="card-users__amount">24.5k</h2>
@@ -69,32 +85,34 @@
         </section>
 
         <!-------- Seccion foro discusion --------->
-        <section>
-            <div class="main-layout">
+        <section class="forum-section">
+            <div class="main-layout forum-layout">
                 <div class="main-layout__forum">
                     <div class="forum__header">
-                        <h1 class="header__title">Foro de discusión</h1>
-                        <button type="button" class="header__button">Nuevo tema</button>
+                        <h2 class="header__title">Foro de discusión</h2>
+                        <button type="button" class="header__button">+ Nuevo tema</button>
                     </div>
+
                     <div class="forum-body">
-                        <div class="forum-table">
-                            <table>
+                        <div class="forum-table-wrapper">
+                            <table class="forum-table">
                                 <thead>
                                     <tr class="table-header">
-                                        <th class="table-header__element">TEMA</th>
+                                        <th class="table-header__element table-header__element--topic">TEMA</th>
                                         <th class="table-header__element">RESPUESTAS</th>
                                         <th class="table-header__element">VISTAS</th>
                                         <th class="table-header__element">ACTIVIDAD</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!-- Topic 1 -->
                                     <tr class="body-row">
-                                        <td class="body-column">
+                                        <td class="body-column body-column--topic">
                                             <div class="body-column__icon">DS</div>
                                             <div class="body-column__post-content">
-                                                <span class="post-content__title">¿Vale la pena actualizar al nuevo chip N3 este año?</span>
+                                                <h3 class="post-content__title">¿Vale la pena actualizar al nuevo chip N3 este año?</h3>
                                                 <div class="post-content__post-meta">
-                                                    <a class="post-meta__category">Hardware</a>
+                                                    <span class="post-meta__category">Hardware</span>
                                                     <span class="post-meta__author-name">por Diego Salas</span>
                                                 </div>
                                             </div>
@@ -103,126 +121,155 @@
                                             <span class="body-column__answers">48</span>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__answers">2.1k</span>
+                                            <span class="body-column__views">2.1k</span>
                                         </td>
                                         <td class="body-column">
                                             <span class="body-column__activity">hace 12 min</span>
                                         </td>
                                     </tr>
-                                     <tr class="body-row">
-                                        <td class="body-column">
-                                            <div class="body-column__icon">DS</div>
+
+                                    <!-- Topic 2 -->
+                                    <tr class="body-row">
+                                        <td class="body-column body-column--topic">
+                                            <div class="body-column__icon body-column__icon--purple">EP</div>
                                             <div class="body-column__post-content">
-                                                <span class="post-content__title">¿Vale la pena actualizar al nuevo chip N3 este año?</span>
+                                                <h3 class="post-content__title">Mejores prácticas para integrar modelos de lenguaje en producción</h3>
                                                 <div class="post-content__post-meta">
-                                                    <a class="post-meta__category">Hardware</a>
-                                                    <span class="post-meta__author-name">por Diego Salas</span>
+                                                    <span class="post-meta__category">IA Generativa</span>
+                                                    <span class="post-meta__author-name">por Elena Pérez</span>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__answers">48</span>
+                                            <span class="body-column__answers">94</span>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__answers">2.1k</span>
+                                            <span class="body-column__views">5.4k</span>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__activity">hace 12 min</span>
+                                            <span class="body-column__activity">hace 35 min</span>
                                         </td>
                                     </tr>
-                                     <tr class="body-row">
-                                        <td class="body-column">
-                                            <div class="body-column__icon">DS</div>
+
+                                    <!-- Topic 3 -->
+                                    <tr class="body-row">
+                                        <td class="body-column body-column--topic">
+                                            <div class="body-column__icon body-column__icon--blue">CM</div>
                                             <div class="body-column__post-content">
-                                                <span class="post-content__title">¿Vale la pena actualizar al nuevo chip N3 este año?</span>
+                                                <h3 class="post-content__title">Debate: ¿Reemplazará WebAssembly a los frameworks JS tradicionales?</h3>
                                                 <div class="post-content__post-meta">
-                                                    <a class="post-meta__category">Hardware</a>
-                                                    <span class="post-meta__author-name">por Diego Salas</span>
+                                                    <span class="post-meta__category">Desarrollo Web</span>
+                                                    <span class="post-meta__author-name">por Carlos Mendoza</span>
                                                 </div>
                                             </div>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__answers">48</span>
+                                            <span class="body-column__answers">132</span>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__answers">2.1k</span>
+                                            <span class="body-column__views">8.9k</span>
                                         </td>
                                         <td class="body-column">
-                                            <span class="body-column__activity">hace 12 min</span>
+                                            <span class="body-column__activity">hace 1 hora</span>
+                                        </td>
+                                    </tr>
+
+                                    <!-- Topic 4 -->
+                                    <tr class="body-row">
+                                        <td class="body-column body-column--topic">
+                                            <div class="body-column__icon body-column__icon--green">LR</div>
+                                            <div class="body-column__post-content">
+                                                <h3 class="post-content__title">Experiencias con monitores OLED de 240Hz para programación</h3>
+                                                <div class="post-content__post-meta">
+                                                    <span class="post-meta__category">Gadgets</span>
+                                                    <span class="post-meta__author-name">por Luis Rojas</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="body-column">
+                                            <span class="body-column__answers">27</span>
+                                        </td>
+                                        <td class="body-column">
+                                            <span class="body-column__views">1.8k</span>
+                                        </td>
+                                        <td class="body-column">
+                                            <span class="body-column__activity">hace 3 horas</span>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <aside>
+
+                        <aside class="forum-sidebar">
                             <div class="tendencies">
                                 <div class="tendencies__header">
-                                    <span>•</span>
-                                    <h2>Tendencias</h2>
+                                    <span class="tendencies__dot">•</span>
+                                    <h3 class="tendencies__title">Tendencias</h3>
                                 </div>
                                 <div class="tendencies__elements">
                                     <div class="elements__list">
                                         <span class="elements__num-element">01</span>
                                         <div class="elements-info">
-                                            <h2 info__title>#IAGenerativa</h2>
-                                            <span info__amount>1.2 debates</span>
+                                            <h4 class="info__title">#IAGenerativa</h4>
+                                            <span class="info__amount">1.2k debates</span>
                                         </div>
                                     </div>
                                     <div class="elements__list">
-                                        <span class="elements__num-element">01</span>
+                                        <span class="elements__num-element">02</span>
                                         <div class="elements-info">
-                                            <h2 info__title>#IAGenerativa</h2>
-                                            <span info__amount>1.2 debates</span>
+                                            <h4 class="info__title">#ComputacionCuantica</h4>
+                                            <span class="info__amount">850 debates</span>
                                         </div>
                                     </div>
                                     <div class="elements__list">
-                                        <span class="elements__num-element">01</span>
+                                        <span class="elements__num-element">03</span>
                                         <div class="elements-info">
-                                            <h2 info__title>#IAGenerativa</h2>
-                                            <span info__amount>1.2 debates</span>
+                                            <h4 class="info__title">#Ciberseguridad</h4>
+                                            <span class="info__amount">640 debates</span>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
+
                             <div class="popular-categories">
-                                <h1 class="popular-categories__title">Categorías populares</h1>
+                                <h3 class="popular-categories__title">Categorías populares</h3>
                                 <div class="popular-categories__elements">
                                     <div class="categories__list">
                                         <span class="elements__name">Hardware</span>
                                         <span class="elements__amount">342</span>
                                     </div>
                                     <div class="categories__list">
-                                        <span class="elements__name">Hardware</span>
-                                        <span class="elements__amount">342</span>
+                                        <span class="elements__name">Software & Web</span>
+                                        <span class="elements__amount">289</span>
                                     </div>
                                     <div class="categories__list">
-                                        <span class="elements__name">Hardware</span>
-                                        <span class="elements__amount">342</span>
+                                        <span class="elements__name">Inteligencia Artificial</span>
+                                        <span class="elements__amount">512</span>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </aside>
                     </div>
                 </div>
+            </div>
         </section>
-        
+
+        <!-------- Seccion FAQ --------->
         <section class="faq-section">
             <div class="faq-header">
                 <h2>Preguntas frecuentes</h2>
-                <p>Todo lo que necesitas saber para formar parte de la comunidad.</p>
+                <p>Todo lo que necesitas saber para formar parte de la comunidad Nexus Tech.</p>
             </div>
 
             <div class="faq-list">
                 <!-- Item 1 -->
-                <details class="faq-item">
+                <details class="faq-item" open>
                     <summary class="faq-question">
                         <span>¿Cómo puedo participar en el foro?</span>
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>Para participar en el foro solo necesitas crear una cuenta gratuita y verificar tu correo electrónico.</p>
+                        <p>Para participar en el foro solo necesitas crear una cuenta gratuita y verificar tu correo electrónico. Podrás abrir nuevos temas, responder a hilos de debate y calificar productos.</p>
                     </div>
                 </details>
 
@@ -233,56 +280,74 @@
                         <span class="faq-icon">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>Sí, mantenemos un código de conducta basado en el respeto mutuo y la colaboración constructiva.</p>
+                        <p>Sí, mantenemos un código de conducta basado en el respeto mutuo, la colaboración constructiva y la prohibición total de spam o desinformación.</p>
                     </div>
                 </details>
 
-                <!-- Repites la estructura para el resto de preguntas... -->
+                <!-- Item 3 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>¿Puedo proponer artículos o reseñas para la revista?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>¡Por supuesto! Nuestro equipo editorial revisa constantemente las sugerencias publicadas en la sección de propuestas del foro.</p>
+                    </div>
+                </details>
+
+                <!-- Item 4 -->
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>¿Cómo se moderan las opiniones de los productos?</span>
+                        <span class="faq-icon">+</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Contamos con moderadores comunitarios y algoritmos que verifican que las reseñas provengan de usuarios reales para mantener la transparencia.</p>
+                    </div>
+                </details>
             </div>
         </section>
-        
-
     </main>
-    <footer>
+
+    <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-grid__section-one">
-                <picture>
-                    <img src="/assets/img/" alt="Noticia destacada" class="section-one__img">
-                </picture>
-                <p>15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+                <h2 class="footer-grid__brand">NEXUS<span class="footer-grid__brand--accent">TECH</span></h2>
+                <p class="footer-grid__description">15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
             </div>
             <div class="footer-grid__section-list">
-                <p class="section-two__light">NAVEGACIÓN</p>
-                <p>Inicio</p>
-                <p>Categorías</p>
-                <p>Reseñas</p>
-                <p>Comunidad</p>
-                <p>Eventos</p>
-                <p>Contacto</p>
+                <h4 class="footer-grid__title">NAVEGACIÓN</h4>
+                <a href="../index.html" class="footer-grid__link">Inicio</a>
+                <a href="categorias.html" class="footer-grid__link">Categorías</a>
+                <a href="resenas.html" class="footer-grid__link">Reseñas</a>
+                <a href="comunidad.html" class="footer-grid__link">Comunidad</a>
+                <a href="eventos.html" class="footer-grid__link">Eventos</a>
+                <a href="contacto.html" class="footer-grid__link">Contacto</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-three__light>CATEGORÍAS</p>
-                <p>Ciberseguridad</p>
-                <p>Computación Cuántica</p>
-                <p>Realidad Virtual</p>
-                <p>Movilidad Eléctrica</p>
-                <p>Exploración Espacial</p>
+                <h4 class="footer-grid__title">CATEGORÍAS</h4>
+                <a href="categorias.html" class="footer-grid__link">Ciberseguridad</a>
+                <a href="categorias.html" class="footer-grid__link">Computación Cuántica</a>
+                <a href="categorias.html" class="footer-grid__link">Realidad Virtual</a>
+                <a href="categorias.html" class="footer-grid__link">Movilidad Eléctrica</a>
+                <a href="categorias.html" class="footer-grid__link">Exploración Espacial</a>
             </div>
             <div class="footer-grid__section-list">
-                <p section-four__light>CONTACTO</p>
-                <p>+52 55 1234 5678</p>
-                <p>Computación Cuántica</p>
-                <p>Bucaramanga, Colombia</p>
+                <h4 class="footer-grid__title">CONTACTO</h4>
+                <p class="footer-grid__info">+52 55 1234 5678</p>
+                <p class="footer-grid__info">contacto@nexustech.io</p>
+                <p class="footer-grid__info">Bucaramanga, Colombia</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
             <div class="footer-bottom__info">
-                <p>Privacidad</p>
-                <p>Términos</p>
-                <p>Cookies</p>
+                <a href="#" class="footer-bottom__link">Privacidad</a>
+                <a href="#" class="footer-bottom__link">Términos</a>
+                <a href="#" class="footer-bottom__link">Cookies</a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
