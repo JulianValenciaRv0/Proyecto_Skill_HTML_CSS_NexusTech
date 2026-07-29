@@ -1,4 +1,6 @@
-/* MAIN HEADER & NAVIGATION */
+/* ==========================================================================
+   MAIN HEADER & NAVIGATION (Pastel Light Theme)
+   ========================================================================== */
 .main-header {
     position: sticky;
     top: 0;
@@ -22,6 +24,7 @@
 
 .logo__link {
     display: inline-block;
+    text-decoration: none;
 }
 
 .logo__title {
@@ -48,6 +51,8 @@
     color: var(--text-secondary);
     position: relative;
     padding: 0.5rem 0;
+    text-decoration: none;
+    transition: color var(--transition-fast);
 }
 
 .navbar__link::after {
@@ -72,31 +77,18 @@
     width: 100%;
 }
 
-/* Mobile Toggle Hamburger (CSS Only) */
+/* Mobile Toggle Hamburger (CSS-Only) */
 .main-header__checkbox {
     display: none;
 }
 
 .main-header__toggle {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 28px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 110;
 }
 
-.main-header__toggle span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: var(--text-heading);
-    border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* GLOBAL SUBPAGE HEADERS (.header-titles) */
+/* ==========================================================================
+   GLOBAL SUBPAGE HEADERS (.header-titles)
+   ========================================================================== */
 .header-titles {
     width: 85vw;
     max-width: 1280px;
@@ -164,7 +156,9 @@
     background: var(--border-color);
 }
 
-/* BANNER SECTION */
+/* ==========================================================================
+   BANER SECTION
+   ========================================================================== */
 .hero-section {
     padding: 2.5rem 0 1.5rem;
 }
@@ -341,7 +335,9 @@
     font-family: var(--font-heading);
 }
 
-/* ARTICLES SECTION */
+/* ==========================================================================
+   ARTICLES SECTION
+   ========================================================================== */
 .featured-section {
     padding: 3rem 0 5rem;
 }
@@ -391,6 +387,7 @@
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--accent-primary);
+    text-decoration: none;
 }
 
 .section-header__link:hover .section-header__arrow {
@@ -680,6 +677,7 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     transition: all var(--transition-fast);
+    text-decoration: none;
 }
 
 .footer-grid__link:hover {
@@ -711,13 +709,16 @@
 
 .footer-bottom__link {
     color: var(--text-muted);
+    text-decoration: none;
 }
 
 .footer-bottom__link:hover {
     color: var(--accent-primary);
 }
 
-/* Responsive Media Queries */
+/* ==========================================================================
+   RESPONSIVE DESIGN (MEDIA QUERIES) & HAMBURGER MENU
+   ========================================================================== */
 @media (max-width: 1024px) {
     .banner {
         flex-direction: column;
@@ -740,6 +741,110 @@
 
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile & Tablet Header Menu Toggle (< 768px) */
+@media (max-width: 768px) {
+    .main-header__container {
+        width: 90vw;
+        position: relative;
+    }
+
+    /* Mostrar botón de menú Hamburguesa */
+    .main-header__toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 120;
+        padding: 2px 0;
+    }
+
+    .main-header__toggle span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--text-heading);
+        border-radius: 3px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                    background-color 0.3s ease;
+    }
+
+    /* Transformación del ícono a una 'X' al activar la casilla */
+    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        background-color: var(--accent-primary);
+    }
+
+    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        background-color: var(--accent-primary);
+    }
+
+    /* Menú desplegable flotante estilo Card */
+    .navbar {
+        position: absolute;
+        top: calc(100% + 0.8rem);
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-lg);
+        box-shadow: 0 12px 32px rgba(30, 41, 59, 0.14);
+        padding: 1.25rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-12px) scale(0.98);
+        transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                    visibility 0.35s;
+        z-index: 110;
+    }
+
+    /* Despliegue al estar activo */
+    .main-header__checkbox:checked ~ .navbar {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0) scale(1);
+    }
+
+    .navbar__list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .navbar__link {
+        display: block;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--text-heading);
+        border-radius: var(--radius-md);
+        transition: all 0.25s ease;
+    }
+
+    .navbar__link::after {
+        display: none;
+    }
+
+    .navbar__link:hover,
+    .navbar__link--active {
+        background-color: var(--accent-soft-blue);
+        color: var(--accent-primary);
+        padding-left: 1.25rem;
     }
 }
 
