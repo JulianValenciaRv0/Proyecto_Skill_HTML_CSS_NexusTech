@@ -1,6 +1,4 @@
-/* ==========================================================================
-   MAIN HEADER & NAVIGATION (Pastel Light Theme)
-   ========================================================================== */
+/* MAIN HEADER & NAVIGATION */
 .main-header {
     position: sticky;
     top: 0;
@@ -86,9 +84,7 @@
     display: none;
 }
 
-/* ==========================================================================
-   GLOBAL SUBPAGE HEADERS (.header-titles)
-   ========================================================================== */
+/* GLOBAL HEADERS (.header-titles)*/
 .header-titles {
     width: 85vw;
     max-width: 1280px;
@@ -156,9 +152,7 @@
     background: var(--border-color);
 }
 
-/* ==========================================================================
-   BANER SECTION
-   ========================================================================== */
+/* BANER SECTION*/
 .hero-section {
     padding: 2.5rem 0 1.5rem;
 }
@@ -335,9 +329,7 @@
     font-family: var(--font-heading);
 }
 
-/* ==========================================================================
-   ARTICLES SECTION
-   ========================================================================== */
+/* ARTICLES SECTION*/
 .featured-section {
     padding: 3rem 0 5rem;
 }
@@ -716,9 +708,7 @@
     color: var(--accent-primary);
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES) & HAMBURGER MENU
-   ========================================================================== */
+/* RESPONSIVE DESIGN (MEDIA QUERIES) & HAMBURGER MENU*/
 @media (max-width: 1024px) {
     .banner {
         flex-direction: column;
@@ -770,22 +760,22 @@
         background-color: var(--text-heading);
         border-radius: 3px;
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-                    background-color 0.3s ease;
+            opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 0.3s ease;
     }
 
     /* Transformación del ícono a una 'X' al activar la casilla */
-    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(1) {
+    .main-header__checkbox:checked~.main-header__toggle span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
         background-color: var(--accent-primary);
     }
 
-    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(2) {
+    .main-header__checkbox:checked~.main-header__toggle span:nth-child(2) {
         opacity: 0;
         transform: translateX(-10px);
     }
 
-    .main-header__checkbox:checked ~ .main-header__toggle span:nth-child(3) {
+    .main-header__checkbox:checked~.main-header__toggle span:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
         background-color: var(--accent-primary);
     }
@@ -808,13 +798,13 @@
         visibility: hidden;
         transform: translateY(-12px) scale(0.98);
         transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-                    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-                    visibility 0.35s;
+            transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 0.35s;
         z-index: 110;
     }
 
     /* Despliegue al estar activo */
-    .main-header__checkbox:checked ~ .navbar {
+    .main-header__checkbox:checked~.navbar {
         opacity: 1;
         visibility: visible;
         transform: translateY(0) scale(1);
