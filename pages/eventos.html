@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendario y eventos tecnológicos destacados en Nexus Tech.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <title>Nexus Tech | Eventos</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header__container">
+            <div class="logo">
+                <a href="../index.html" class="logo__link">
+                    <h1 class="logo__title">NEXUS<span class="logo__title--accent">TECH</span></h1>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="main-header__checkbox">
+            <label for="menu-toggle" class="main-header__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="../index.html" class="navbar__link">Inicio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="categorias.html" class="navbar__link">Categorías</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="resenas.html" class="navbar__link">Reseñas</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="comunidad.html" class="navbar__link">Comunidad</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="eventos.html" class="navbar__link navbar__link--active">Eventos</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="contacto.html" class="navbar__link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-------- Seccion del title header --------->
+        <section>
+            <div class="header-titles">
+                <p class="header-titles__subtitle">Agenda tecnológica / 05</p>
+                <h1 class="header-titles__title">Eventos <span class="header-titles__title-light">tecnológicos</span></h1>
+                <p class="header-titles__description">Conferencias, lanzamientos y encuentros que marcan el ritmo de la industria. No te pierdas ninguna fecha clave de la tecnología mundial.</p>
+            </div>
+        </section>
+
+        <!-------- Seccion Calendario --------->
+        <section class="events-section">
+            <div class="header-second-title">
+                <h2>Calendario de eventos</h2>
+            </div>
+
+            <div class="calendar-card">
+                <!-- Header del Calendario -->
+                <div class="calendar-header">
+                    <div class="calendar-controls">
+                        <button type="button" class="btn-arrow" aria-label="Mes anterior">&lt;</button>
+                        <h3 class="calendar-month">Octubre 2026</h3>
+                        <button type="button" class="btn-arrow" aria-label="Mes siguiente">&gt;</button>
+                    </div>
+
+                    <div class="calendar-legend">
+                        <span class="legend-item"><span class="dot conferencia"></span>Conferencia</span>
+                        <span class="legend-item"><span class="dot lanzamiento"></span>Lanzamiento</span>
+                        <span class="legend-item"><span class="dot meetup"></span>Meetup</span>
+                    </div>
+                </div>
+
+                <!-- Días de la semana -->
+                <div class="calendar-weekdays">
+                    <span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span>
+                </div>
+
+                <!-- Rejilla de días del mes -->
+                <div class="calendar-grid">
+                    <div class="day-card empty"></div>
+                    <div class="day-card empty"></div>
+                    <div class="day-card empty"></div>
+
+                    <div class="day-card"><span class="day-number">1</span></div>
+                    <div class="day-card"><span class="day-number">2</span></div>
+                    <div class="day-card"><span class="day-number">3</span></div>
+                    <div class="day-card"><span class="day-number">4</span></div>
+                    <div class="day-card"><span class="day-number">5</span></div>
+
+                    <div class="day-card has-event">
+                        <span class="day-number">6</span>
+                        <span class="event-badge conferencia">Google I/O</span>
+                    </div>
+
+                    <div class="day-card"><span class="day-number">7</span></div>
+                    <div class="day-card"><span class="day-number">8</span></div>
+                    <div class="day-card"><span class="day-number">9</span></div>
+                    <div class="day-card"><span class="day-number">10</span></div>
+                    <div class="day-card"><span class="day-number">11</span></div>
+
+                    <div class="day-card has-event">
+                        <span class="day-number">12</span>
+                        <span class="event-badge lanzamiento">Apple WWDC</span>
+                    </div>
+
+                    <div class="day-card"><span class="day-number">13</span></div>
+                    <div class="day-card"><span class="day-number">14</span></div>
+                    <div class="day-card"><span class="day-number">15</span></div>
+                    <div class="day-card"><span class="day-number">16</span></div>
+                    <div class="day-card"><span class="day-number">17</span></div>
+
+                    <div class="day-card has-event">
+                        <span class="day-number">18</span>
+                        <span class="event-badge meetup">MWC Barcelona</span>
+                    </div>
+
+                    <div class="day-card"><span class="day-number">19</span></div>
+                    <div class="day-card"><span class="day-number">20</span></div>
+                    <div class="day-card"><span class="day-number">21</span></div>
+                    <div class="day-card"><span class="day-number">22</span></div>
+
+                    <div class="day-card has-event">
+                        <span class="day-number">23</span>
+                        <span class="event-badge conferencia">CES Las Vegas</span>
+                    </div>
+
+                    <div class="day-card"><span class="day-number">24</span></div>
+                    <div class="day-card"><span class="day-number">25</span></div>
+                    <div class="day-card"><span class="day-number">26</span></div>
+                    <div class="day-card"><span class="day-number">27</span></div>
+                    <div class="day-card"><span class="day-number">28</span></div>
+
+                    <div class="day-card has-event">
+                        <span class="day-number">29</span>
+                        <span class="event-badge lanzamiento">Keynote Tech</span>
+                    </div>
+
+                    <div class="day-card"><span class="day-number">30</span></div>
+                    <div class="day-card"><span class="day-number">31</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-------- Seccion Eventos Destacados --------->
+        <section class="featured-events-section">
+            <div class="header-second-title">
+                <h2>Eventos destacados</h2>
+            </div>
+
+            <div class="cards-events">
+                <!-- Event 1 -->
+                <article class="cards_events__card">
+                    <picture class="card__picture">
+                        <img class="card__image" src="../assets/img/expo.webp" alt="CES 2027 Las Vegas">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">05 - 08 Ene, 2027</span>
+                            <span class="header__location">Las Vegas, EE. UU.</span>
+                        </div>
+                        <h3 class="card-info__title">CES 2027 (Consumer Electronics Show)</h3>
+                        <p class="card-info__description">La feria tecnológica más grande e influyente del mundo, donde las marcas globales presentan avances en IA, gadgets de consumo y movilidad del futuro.</p>
+                        <a class="header__link" href="https://www.ces.tech/" target="_blank" rel="noopener">Sitio web oficial <span class="header__arrow">➝</span></a>
+                    </div>
+                </article>
+
+                <!-- Event 2 -->
+                <article class="cards_events__card">
+                    <picture class="card__picture">
+                        <img class="card__image" src="../assets/img/robotics.jpg" alt="MWC Barcelona">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">01 - 04 Mar, 2027</span>
+                            <span class="header__location">Barcelona, España</span>
+                        </div>
+                        <h3 class="card-info__title">MWC Barcelona 2027</h3>
+                        <p class="card-info__description">El evento definitivo de la industria móvil y las telecomunicaciones globales. Presentación de nuevos smartphones, conectividad 6G e infraestructura conectada.</p>
+                        <a class="header__link" href="https://www.mwcbarcelona.com/" target="_blank" rel="noopener">Sitio web oficial <span class="header__arrow">➝</span></a>
+                    </div>
+                </article>
+
+                <!-- Event 3 -->
+                <article class="cards_events__card">
+                    <picture class="card__picture">
+                        <img class="card__image" src="../assets/img/cyber.jpg" alt="Apple WWDC">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">08 - 12 Jun, 2026</span>
+                            <span class="header__location">Cupertino, EE. UU.</span>
+                        </div>
+                        <h3 class="card-info__title">Apple WWDC 2026</h3>
+                        <p class="card-info__description">Conferencia mundial de desarrolladores de Apple. Anuncio de las nuevas versiones de iOS, macOS, visionOS e innovaciones en inteligencia sintética.</p>
+                        <a class="header__link" href="https://developer.apple.com/wwdc/" target="_blank" rel="noopener">Sitio web oficial <span class="header__arrow">➝</span></a>
+                    </div>
+                </article>
+
+                <!-- Event 4 -->
+                <article class="cards_events__card">
+                    <picture class="card__picture">
+                        <img class="card__image" src="../assets/img/nexus.jpg" alt="Google I/O">
+                    </picture>
+                    <div class="card-info">
+                        <div class="card__header">
+                            <span class="header__viñeta">•</span>
+                            <span class="header__date">19 - 20 May, 2026</span>
+                            <span class="header__location">Mountain View, EE. UU.</span>
+                        </div>
+                        <h3 class="card-info__title">Google I/O 2026</h3>
+                        <p class="card-info__description">El congreso anual de desarrolladores de Google centrado en avances de la familia Gemini, Android nativo, herramientas de desarrollo cloud e IA.</p>
+                        <a class="header__link" href="https://io.google/" target="_blank" rel="noopener">Sitio web oficial <span class="header__arrow">➝</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-grid__section-one">
+                <h2 class="footer-grid__brand">NEXUS<span class="footer-grid__brand--accent">TECH</span></h2>
+                <p class="footer-grid__description">15 años de periodismo tecnológico. Ahora en digital para contar las historias que están diseñando el futuro.</p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-socials__link" aria-label="Twitter">
+                        <span class="footer-socials__icon">𝕏</span>
+                        <span class="footer-socials__name">Twitter</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="LinkedIn">
+                        <span class="footer-socials__icon">in</span>
+                        <span class="footer-socials__name">LinkedIn</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="GitHub">
+                        <span class="footer-socials__icon">⌨</span>
+                        <span class="footer-socials__name">GitHub</span>
+                    </a>
+                    <a href="#" class="footer-socials__link" aria-label="YouTube">
+                        <span class="footer-socials__icon">▶</span>
+                        <span class="footer-socials__name">YouTube</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-grid__section-list">
+                <h4 class="footer-grid__title">NAVEGACIÓN</h4>
+                <a href="../index.html" class="footer-grid__link">Inicio</a>
+                <a href="categorias.html" class="footer-grid__link">Categorías</a>
+                <a href="resenas.html" class="footer-grid__link">Reseñas</a>
+                <a href="comunidad.html" class="footer-grid__link">Comunidad</a>
+                <a href="eventos.html" class="footer-grid__link">Eventos</a>
+                <a href="contacto.html" class="footer-grid__link">Contacto</a>
+            </div>
+            <div class="footer-grid__section-list">
+                <h4 class="footer-grid__title">CATEGORÍAS</h4>
+                <a href="categorias.html" class="footer-grid__link">Ciberseguridad</a>
+                <a href="categorias.html" class="footer-grid__link">Computación Cuántica</a>
+                <a href="categorias.html" class="footer-grid__link">Realidad Virtual</a>
+                <a href="categorias.html" class="footer-grid__link">Movilidad Eléctrica</a>
+                <a href="categorias.html" class="footer-grid__link">Exploración Espacial</a>
+            </div>
+            <div class="footer-grid__section-list">
+                <h4 class="footer-grid__title">CONTACTO</h4>
+                <p class="footer-grid__info">📍 Bucaramanga, Colombia</p>
+                <p class="footer-grid__info">✉️ contacto@nexustech.io</p>
+                <p class="footer-grid__info">📞 +52 55 1234 5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Nexus Tech. Todos los derechos reservados.</p>
+            <div class="footer-bottom__info">
+                <a href="#" class="footer-bottom__link">Privacidad</a>
+                <a href="#" class="footer-bottom__link">Términos</a>
+                <a href="#" class="footer-bottom__link">Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

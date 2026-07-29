@@ -1,0 +1,325 @@
+/* CONTACT PAGE STYLES */
+.contact-section {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 2.5rem auto 4rem;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+/* SIDEBAR CONTACT INFO & SOCIAL MEDIA */
+.contact-info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.contact-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+}
+
+.contact-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 1.25rem;
+    font-family: var(--font-heading);
+}
+
+.contact-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contact-item__icon {
+    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    background: var(--accent-soft-blue);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact-item__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-sans);
+}
+
+.contact-item__value {
+    font-size: 0.95rem;
+    color: var(--text-heading);
+    font-weight: 600;
+}
+
+/* Animated Social Networks Cards Block */
+.social-links-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+}
+
+.social-links-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.social-links-card__subtitle {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.1rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn__icon {
+    font-size: 1.2rem;
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s ease, background 0.35s ease, color 0.35s ease;
+}
+
+.social-btn__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-heading);
+    transition: color 0.35s ease, transform 0.35s ease;
+}
+
+/* Hover Animations for Social Buttons */
+.social-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px var(--accent-blue-glow);
+}
+
+.social-btn:hover .social-btn__icon {
+    transform: rotate(15deg) scale(1.1);
+    background: #ffffff;
+    color: var(--accent-primary);
+}
+
+.social-btn:hover .social-btn__name {
+    color: #ffffff;
+    transform: translateX(2px);
+}
+
+/* Specific Social Brand Colors on Hover (Subtle Pastel Accents) */
+.social-btn--twitter:hover {
+    background: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.social-btn--linkedin:hover {
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+.social-btn--github:hover {
+    background: #24292e;
+    border-color: #24292e;
+}
+
+.social-btn--youtube:hover {
+    background: #ff0000;
+    border-color: #ff0000;
+}
+
+.social-btn--instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-color: #dc2743;
+}
+
+/* CONTACT FORM */
+.contact-form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+}
+
+.contact-form-card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.contact-form-card__description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-heading);
+}
+
+.form-group__input,
+.form-group__select,
+.form-group__textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-heading);
+    font-family: var(--font-sans);
+    transition: all var(--transition-fast);
+}
+
+.form-group__input:focus,
+.form-group__select:focus,
+.form-group__textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px var(--accent-soft-blue);
+    background: #ffffff;
+}
+
+.form-group__textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-submit-btn {
+    padding: 1rem 2rem;
+    background: var(--accent-primary);
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 12px var(--accent-blue-glow);
+    font-family: var(--font-sans);
+    align-self: flex-start;
+}
+
+.form-submit-btn:hover {
+    background: var(--accent-primary-hover);
+    transform: translateY(-2px);
+}
+
+/* MAP CONTAINER */
+.map-section {
+    width: 85vw;
+    max-width: 1280px;
+    margin: 4rem auto 0;
+}
+
+.map-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 380px;
+    box-shadow: var(--shadow-card);
+    position: relative;
+}
+
+.map-container__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .contact-section,
+    .map-section {
+        width: 92vw;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+}
