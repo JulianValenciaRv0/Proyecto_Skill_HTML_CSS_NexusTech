@@ -1,6 +1,4 @@
-/* ==========================================================================
-   MAIN HEADER & NAVIGATION (Pastel Light Theme)
-   ========================================================================== */
+/* MAIN HEADER & NAVIGATION */
 .main-header {
     position: sticky;
     top: 0;
@@ -98,9 +96,7 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* ==========================================================================
-   GLOBAL SUBPAGE HEADERS (.header-titles)
-   ========================================================================== */
+/* GLOBAL SUBPAGE HEADERS (.header-titles) */
 .header-titles {
     width: 85vw;
     max-width: 1280px;
@@ -168,9 +164,7 @@
     background: var(--border-color);
 }
 
-/* ==========================================================================
-   HERO / BANNER SECTION (Pastel Light Theme)
-   ========================================================================== */
+/* BANNER SECTION */
 .hero-section {
     padding: 2.5rem 0 1.5rem;
 }
@@ -346,9 +340,7 @@
     font-family: var(--font-heading);
 }
 
-/* ==========================================================================
-   FEATURED ARTICLES SECTION & EXPANDABLE CARDS GRID
-   ========================================================================== */
+/* ARTICLES SECTION */
 .featured-section {
     padding: 3rem 0 5rem;
 }
@@ -408,7 +400,7 @@
     transition: transform var(--transition-fast);
 }
 
-/* Grid Cards System (Pastel Cards matched to user image) */
+/* Grid Cards System */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -530,9 +522,7 @@
     color: var(--accent-primary);
 }
 
-/* ==========================================================================
-   EXPANDABLE DETAILS COMPONENT (Exclusive to Home Page Cards)
-   ========================================================================== */
+/* EXPANDABLE DETAILS COMPONENT */
 .grid-cards__details {
     margin-top: 0.5rem;
 }
@@ -586,15 +576,14 @@
         opacity: 0;
         transform: translateY(-6px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* ==========================================================================
-   FOOTER & SOCIAL MEDIA (Pastel Light Theme)
-   ========================================================================== */
+/* FOOTER */
 .main-footer {
     background-color: #ffffff;
     border-top: 1px solid var(--border-color);
@@ -754,6 +743,7 @@
 }
 
 @media (max-width: 640px) {
+
     .header-titles,
     .articles-section,
     .banner,

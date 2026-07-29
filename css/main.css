@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Color Palette - Light Pastel Tech Aesthetic */
+    /* Color Palette */
     --bg-page: #f8f7f4;
     --bg-card: #ffffff;
     --bg-card-hover: #ffffff;
     --bg-surface: #f1f0eb;
     --bg-input: #ffffff;
 
-    /* Accents - Soft Pastel Blue */
+    /* Pastel Blue */
     --accent-primary: #6ea8dc;
     --accent-primary-hover: #5a96cc;
     --accent-soft-blue: #e8f2fc;
@@ -47,7 +47,9 @@
 }
 
 /* CSS Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -66,7 +68,12 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--text-heading);
     line-height: 1.25;
@@ -84,11 +91,15 @@ img {
     display: block;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
     font: inherit;
     color: inherit;
 }

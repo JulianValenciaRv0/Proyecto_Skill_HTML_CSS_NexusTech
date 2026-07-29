@@ -1,6 +1,4 @@
-/* ==========================================================================
-   CATEGORIES PAGE LAYOUT (Pastel Light Theme)
-   ========================================================================== */
+/* CATEGORIES PAGE LAYOUT */
 .main-layout {
     width: 85vw;
     max-width: 1280px;
@@ -10,9 +8,7 @@
     align-items: flex-start;
 }
 
-/* ==========================================================================
-   SIDEBAR FILTERS (Sticky visual filter bar)
-   ========================================================================== */
+/* SIDEBAR FILTERS */
 .filter-sidebar {
     width: 280px;
     flex-shrink: 0;
@@ -123,9 +119,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   MAIN CONTENT & ARTICLES GRID
-   ========================================================================== */
+/* MAIN CONTENT & ARTICLES GRID */
 .section-cards {
     flex-grow: 1;
     width: 100%;
@@ -182,9 +176,7 @@
     width: 100%;
 }
 
-/* ==========================================================================
-   PAGINATION
-   ========================================================================== */
+/* PAGINATION */
 .pagination-wrapper {
     margin-top: 3.5rem;
     display: flex;
@@ -228,9 +220,7 @@
     cursor: not-allowed;
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES - Tablet & Mobile Full Width)
-   ========================================================================== */
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .main-layout {
         flex-direction: column;

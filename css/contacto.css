@@ -1,6 +1,4 @@
-/* ==========================================================================
-   CONTACT PAGE STYLES (Pastel Light Theme)
-   ========================================================================== */
+/* CONTACT PAGE STYLES */
 .contact-section {
     width: 85vw;
     max-width: 1280px;
@@ -14,9 +12,7 @@
     align-items: flex-start;
 }
 
-/* ==========================================================================
-   SIDEBAR CONTACT INFO & SOCIAL MEDIA
-   ========================================================================== */
+/* SIDEBAR CONTACT INFO & SOCIAL MEDIA */
 .contact-info-sidebar {
     display: flex;
     flex-direction: column;
@@ -193,9 +189,7 @@
     border-color: #dc2743;
 }
 
-/* ==========================================================================
-   CONTACT FORM
-   ========================================================================== */
+/* CONTACT FORM */
 .contact-form-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -284,9 +278,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   MAP CONTAINER
-   ========================================================================== */
+/* MAP CONTAINER */
 .map-section {
     width: 85vw;
     max-width: 1280px;
@@ -317,6 +309,7 @@
 }
 
 @media (max-width: 640px) {
+
     .contact-section,
     .map-section {
         width: 92vw;
